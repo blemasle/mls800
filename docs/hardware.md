@@ -44,18 +44,14 @@ The display and 8 of the switches are controlled by an [AS1115-BSST](https://ams
 
 The case is made out of 4 black painted and bended stainless steel sheets. Assembly is achieved through self-clinching fasteners, which help keeping the out surface smooth and give a profesionnal-like feel to the unit. A laser cut acrylic bezel and the digitally printed front panel helps push that feeling even further.
 
-<a href="../assets/large/hardware-rack-front-left.jpg">
-	<img alt="Case front left" src="../assets/hardware-rack-front-left.jpg" width="40%"></img>
-</a>&nbsp;&nbsp;
-<a href="../assets/large/hardware-rack-front-right.jpg">
-	<img alt="Case front right" src="../assets/hardware-rack-front-right.jpg" width="57%"></img>
-</a>  
+[![Rack front left](assets/hardware-rack-front-left.jpg){: width="40%"}](assets/large/hardware-rack-front-left.jpg)&nbsp;&nbsp;
+[![Rack front right](assets/hardware-rack-front-right.jpg){: width="58%"}](assets/large/hardware-rack-front-right.jpg)  
 
 [![Self clinching fasteners](assets/hardware-rack-fasteners.jpg)](assets/large/hardware-rack-fasteners.jpg)
 
 Another choice I'm really happy with is using [NSJ8HC](https://www.neutrik.com/en/product/nsj8hc) stacked jacked header. They were expensive but avoid to use the full rack width, and also provide a tightening screw which helps relieve the pression against the motherboard when inserting jacks.
 
-[![Rack  left back](assets/hardware-rack-back-left.jpg)](assets/large/hardware-rack-left.jpg)
+[![Rack  left back](assets/hardware-rack-back-left.jpg)](assets/large/hardware-rack-back-left.jpg)
 
 I've sent the case files over to a Canadian company, [Protocase](https://www.protocase.com), and oh boy they've done an outstanding job building it! The good thing is, they're able to produce cases from start to finish, including printing them. The case you see on the pictures is the one I've got straight out from the mail, including the screws! While I knew nothing about tolerances at the time and did not took those into account during my designs, I only had to remove one screw and not fully tighten another for the case to perfectly be aligned. Both problematic screws where on the front panel "S" mounting bracket, which I knew would be a very tight fit without using tolerances.
 

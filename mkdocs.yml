@@ -21,14 +21,11 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: true
-  - pymdownx.betterem:
-      smart_enable: all
   - pymdownx.details
+  - pymdownx.extra
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_alt
   - pymdownx.mark
-  - pymdownx.superfences
-  - markdown.extensions.tables
   - pymdownx.tasklist:
       custom_checkbox: True
 
