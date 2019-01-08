@@ -4,7 +4,7 @@ hero: An open-source MIDI controlled loop switcher
 
 The MLS800 is an open-source 1U rack unit MIDI Loop Switcher with 8 audio loops.  
 
-![MLS800](assets/index-mls800.jpg)
+[![MLS800](assets/index-mls800.jpg)](assets/large/index-mls800.jpg)
 
 ## Features
 
