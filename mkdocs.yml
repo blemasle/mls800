@@ -5,8 +5,8 @@ site_author: Bertrand Lemasle
 site_url: https://blemasle.github.io/mls800/
 
 # Repository
-repo_name: 'blemasle/mls800-firmware'
-repo_url: 'https://github.com/blemasle/mls800-firmware'
+repo_name: 'blemasle/mls800-docs'
+repo_url: 'https://github.com/blemasle/mls800-docs'
 
 # Copyright
 copyright: 'Copyright &copy; 2013 - 2019 Bertrand Lemasle'
@@ -35,7 +35,7 @@ markdown_extensions:
 # Navigation
 nav:
   - Home: 'index.md'
-  - Hardware: 'hardware.md'
-  - Building instructions: 'building.md'
-  - User manual: 'manual.md'
-  - Project history: 'history.md'
+  - 'hardware.md'
+  - 'building.md'
+  - 'manual.md'
+  - 'history.md'
