@@ -35,3 +35,7 @@ markdown_extensions:
 # Navigation
 nav:
   - Home: 'index.md'
+  - Hardware: 'hardware.md'
+  - Building instructions: 'building.md'
+  - User manual: 'manual.md'
+  - Project history: 'history.md'
