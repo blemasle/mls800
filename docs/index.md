@@ -1,17 +1,19 @@
-# Welcome to MkDocs
+hero: An open-source MIDI controlled loop switcher
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+# MLS800
 
-## Commands
+The MLS800 is an open-source 1U rack unit MIDI Loop Switcher with 8 audio loops.  
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+![MLS800](assets/mls800.jpg)
 
-## Project layout
+## Features
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* 8 audio loops
+* 128 presets
+* Active preset is controlled by `Program Change` MIDI message
+* Immediate feedback of activated loops through 8 illuminated switches
+* 5 digits 7 segment display
+
+
+!!! warning "Disclaimer"  
+	This project was merely a study case. At the time, I knew almost nothing and had to learn everything. As a consequence, and while I did my best to built a "profesionnal" product, the finished product might have some flaws.
