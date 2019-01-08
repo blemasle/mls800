@@ -9,7 +9,7 @@ repo_name: 'blemasle/mls800-docs'
 repo_url: 'https://github.com/blemasle/mls800-docs'
 
 # Copyright
-copyright: 'Copyright &copy; 2013 - 2019 Bertrand Lemasle'
+copyright: 'Copyright &copy; 2013 - 2019 <a href="https://github.com/blemasle">Bertrand Lemasle</a>'
 
 # Configuration
 theme: material
@@ -25,6 +25,8 @@ markdown_extensions:
   - pymdownx.extra
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_alt
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
   - pymdownx.mark
   - pymdownx.tasklist:
       custom_checkbox: True

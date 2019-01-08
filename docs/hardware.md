@@ -49,7 +49,7 @@ The case is made out of 4 black painted and bended stainless steel sheets. Assem
 
 [![Self clinching fasteners](assets/hardware-rack-fasteners.jpg)](assets/large/hardware-rack-fasteners.jpg)
 
-Another choice I'm really happy with is using [NSJ8HC](https://www.neutrik.com/en/product/nsj8hc) stacked jacked header. They were expensive but avoid to use the full rack width, and also provide a tightening screw which helps relieve the pression against the motherboard when inserting jacks.
+Another choice I'm really happy with is using [NSJ8HC](https://www.neutrik.com/en/product/nsj8hc) stacked jacks header. They were expensive but avoid to use the full rack width, and also provide a tightening screw which helps relieve the pression against the motherboard when inserting jacks.
 
 [![Rack  left back](assets/hardware-rack-back-left.jpg)](assets/large/hardware-rack-back-left.jpg)
 
