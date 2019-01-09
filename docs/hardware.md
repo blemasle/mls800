@@ -53,7 +53,7 @@ Another choice I'm really happy with is using [NSJ8HC](https://www.neutrik.com/e
 
 [![Rack  left back](assets/hardware-rack-back-left.jpg)](assets/large/hardware-rack-back-left.jpg)
 
-I've sent the case files over to a Canadian company, [Protocase](https://www.protocase.com), and oh boy they've done an outstanding job building it! The good thing is, they're able to produce cases from start to finish, including printing them. The case you see on the pictures is the one I've got straight out from the mail, including the screws! While I knew nothing about tolerances at the time and did not take those into account during my designs, I only had to remove one screw and not fully tighten another for the case to perfectly be aligned. Both problematic screws where on the front panel "S" mounting bracket, which I knew would be a very tight fit without using tolerances.
+I've sent the case files over to a Canadian company, [Protocase](https://www.protocase.com), and oh boy they've done an outstanding job building it! The good thing is, they're able to produce cases from start to finish, including printing them. The case you see on the pictures is the one I've got straight out from the mail, including the screws! 
 
 When one passes by my gear and ask about it, he does not notice that one of the racks is entirely "home" made. I highly recommend [Protocase](https://www.protocase.com), really.
 
