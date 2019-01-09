@@ -26,9 +26,25 @@ If you know how to solder SMD components, the PCB presents no difficulties whats
 
 There are a lot of identical components in those two PCBs so it can feel a bit boring after some time. Also, don't be greedy on the tin on the back connectors as solder joints are responsible for keeping your connector in place while inserting or removing plugs. While if you're building the case, some of that pressure will be relieved through back screws, this is just an *extra* layer of strengthening, you should not rely on it.
 
-## Flashing the firmware
+## Flashing the firmware on a blank board
 
-TODO
+After soldering the PCB, you'll need to flash the necessary bits to its processor to bring it to life. To do so, burn the Arduino micro bootloader through the standard ICSP port `P1`, the &#x25b6; indicating the pin `1`.
+
+![ISCP header on pcb](assets/building-icsp-header-pcb.jpg)&nbsp;![ISCP header pinout](assets/building-icsp-header.jpg)
+
+You'll need either a programmer, or another Arduino with the `ArduinoISP` loaded on to it. I usually dedicate an Arduino Nano to this task. A complete procedure can be found on the [Arduino website](https://www.arduino.cc/en/Tutorial/ArduinoISP).
+
+* Upload the `ArduinoISP` sketch to a second arduino
+* Carefully wire your programmer to the MLS800 PCB
+* From the Arduino IDE, select the `Arduino micro` board and `Arduino as ISP` programmer
+* Select the COM port of your programmer
+* Hit `Burn Bootloader` command
+
+Once done, the `Edit` LED should blink.
+
+![It's alive](assets/building-its-alive.webp)
+
+You can then prooced to [Flashing the firmware](manual#updating).
 
 ## Ordering the case and display bezel
 
