@@ -24,8 +24,6 @@ markdown_extensions:
   - meta
   - codehilite
   - admonition
-  - toc:
-      permalink: true
   - pymdownx.details
   - pymdownx.extra
   - pymdownx.emoji:
@@ -33,8 +31,12 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shorthand: true
   - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.tasklist:
       custom_checkbox: True
+  - smarty
+  - toc:
+      permalink: true
 
 # Navigation
 nav:

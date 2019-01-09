@@ -26,6 +26,10 @@ If you know how to solder SMD components, the PCB presents no difficulties whats
 
 There are a lot of identical components in those two PCBs so it can feel a bit boring after some time. Also, don't be greedy on the tin on the back connectors as solder joints are responsible for keeping your connector in place while inserting or removing plugs. While if you're building the case, some of that pressure will be relieved through back screws, this is just an *extra* layer of strengthening, you should not rely on it.
 
+## Flashing the firmware
+
+TODO
+
 ## Ordering the case and display bezel
 
 All the files required to order the case can be downloaded over the [github repository](https://github.com/blemasle/mls800-case/relases/latest). As [I said](hardware#the-case) earlier, I ordered the case from [Protocase](https://www.protocase.com) which I again highly recommend. The front panel bezel has been ordered from [Bay Plastics Ltd](http://bayplastics.co.uk), but I'm guessing that Protocase would be able to make it.  
@@ -40,4 +44,29 @@ Rack-FrontPanel  | Rack case front					| 0.060"			| Cold rolled steel | Matte Bl
 MountingBracket	 | Daughterboard mounting bracket	| 0.048"			| Cold rolled steel | Matte Black	| [Protocase](https://www.protocase.com)
 MLS800.svg		 | Front and Back illustrations		| :x:				| Digital printing	| White			| [Protocase](https://www.protocase.com)
 FrontPanel-Bezel | Main display bezel				| 0.118"/3mm		| Acrylic(Perspex)	| 4401 Red		| [Bay Plastics Ltd](http://bayplastics.co.uk)
+
+## Assembly
+
+!!! warning
+	While I knew nothing about tolerances at the time and did not take those into account during my designs, I only had to remove one screw and not fully tighten another for the case to perfectly be aligned. Both problematic screws where on the front panel "S" mounting bracket, which I knew would be a very tight fit without using tolerances.
+
+Now that you have all the pieces at hand, let's play some Lego(r) :smile:!  
+First, screw the motherboard to the Rack chassis, then the daughterboard to the mounting bracket. Do not forget to add rear screws to the stacked jack headers to relieve the pressure on the solder joints while inserting or removing jacks.
+
+[![Assembly in progress](assets/building-assembly-1.jpg)](assets/large/building-assembly-1.jpg)  
+
+!!! note
+	On my unit, I had to not use the bottom middle screw to avoid to induce tension to the daughterboard PCB. You can now place the mounting bracket on to the rack chassis, and connect the ribbon cable between the two PCBs.
+
+Then, snap the bezel into the front panel. This should be a precise fit and should not require any rework and/or glue to make it stick. Screw the front panel and the cover together.
+
+[![Assembly in progress](assets/building-assembly-2.jpg)](assets/large/building-assembly-2.jpg)  
+
+Finally, screw together the two subassemblies. You're done!
+
+!!! note
+	On my unit, the top right screw of the mounting bracket is not fully tightened. When it does, some of the switches do not properly work. Again, the rack was designed without any tolerances considerations.
+
+[![Assembly done, front](assets/index-mls800.jpg)](assets/large/index-mls800.jpg)  
+[![Assembly done, back](assets/hardware-rack-back.jpg)](assets/large/hardware-rack-back.jpg)
 
