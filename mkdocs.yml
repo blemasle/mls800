@@ -9,10 +9,15 @@ repo_name: 'blemasle/mls800-docs'
 repo_url: 'https://github.com/blemasle/mls800-docs'
 
 # Copyright
-copyright: 'Copyright &copy; 2013 - 2019 <a href="https://github.com/blemasle">Bertrand Lemasle</a>'
+copyright: |
+  Copyright &copy; 2013 - 2019 <a href="https://github.com/blemasle">Bertrand Lemasle</a>
+  <br><span class="md-footer-custom-text">emoji provided free by </span><a href="http://www.emojione.com">EmojiOne</a>
+
 
 # Configuration
-theme: material
+theme:
+  name: material
+  custom_dir: theme
 
 # Extensions
 markdown_extensions:
@@ -39,3 +44,10 @@ nav:
   - 'manual.md'
   - 'gallery.md'
   - 'history.md'
+
+extra:
+  social:
+    - type: github
+      link: https://github.com/blemasle
+extra_css:
+  - extra.css

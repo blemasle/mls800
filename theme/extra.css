@@ -1,0 +1,16 @@
+.md-footer .md-footer-custom-text {
+  color: hsla(0, 0%, 100%, 0.3);
+}
+
+.md-typeset .magiclink::before {
+	position: relative;
+	padding-right: 0.25rem;
+	font-family: FontAwesome;
+	-moz-osx-font-smoothing: initial;
+	-webkit-font-smoothing: initial;
+	font-weight: 400;
+}
+
+.md-typeset .magiclink-repository.magiclink-github::before {
+	content: "\f09b";
+}
