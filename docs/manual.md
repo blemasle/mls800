@@ -26,14 +26,14 @@ The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independan
 
 **Back panel image, with numbered items**
 
-1. Power supply input : 2mm ID, 5.5mm OD, positively centered. 9 to 12 VDC @ 1A minimum. Basically any supply fitting an Arduino Uno
+1. Power supply input: 2mm ID, 5.5mm OD, positively centered. 9 to 12 VDC @ 1A minimum. Basically, any supply fitting an Arduino Uno will do.
 2. Reset switch
 3. USB port. Provides a Serial port and 1x MIDI In, 1x MIDI out ports. 
 4. MIDI Input
 5. MIDI Thru
 6. Main audio input
-7. Loops `1` to `8` signal send
-8. Loops `1` to `8` signal return
+7. Loops `1` to `8` send signal
+8. Loops `1` to `8` return signal
 9. Main audio output
 
 !!! danger
@@ -44,7 +44,7 @@ The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independan
 
 ## First use
 
-On power on, the MLS800 applies the last active preset and displays the firmware version for a brief moment. The unit then enter into the `Playing` mode.
+On power on, the MLS800 applies the last active preset and displays the firmware version for a brief moment. The unit then enters into the `Playing` mode.
 
 ## Modes
 
@@ -58,14 +58,14 @@ You pass from one mode to another by pressing ++"Edit"++.
 
 ### Playing
 
-The MLS800 displays the active preset and listen for an incoming MIDI `Program Change` message. If received, the corresponding preset number will be applied.
+The MLS800 displays the active preset and listens for an incoming MIDI `Program Change` message. If received, the corresponding preset number will be applied.
 
 !!! note
 	You can manually change the active preset using ++arrow-up++ or ++arrow-down++.
 
 ### Learning
 
-The MLS800 main display and ++"Edit"++ are blinking, while waiting for an incoming `Program Change` message. Upon receive one, the current preset state will remain unchanged, and the unit will switch to `Editing` mode for the requested preset number.
+The MLS800 main display and ++"Edit"++ are blinking, while waiting for an incoming `Program Change` message. Upon receiving one, the current preset state will remain unchanged, and the unit will switch to `Editing` mode for the requested preset number.
 
 !!! tip "Copying a preset"
 	You can use the fact that the current state will remain unchanged to copy a preset to a new location.
@@ -95,17 +95,17 @@ Editing a value works like in `Editing` mode. The editing indicator is on, ++"Ed
 | `menu`	| Main menu. Press ++"Menu"++ to return to `Playing` mode.								|
 | `midi`	| Configures MIDI.																		|
 | --> `r`	| Configures MIDI Rx channel from `0` to `16`. `0` listen to all channels (Omni mode). 	|
-| `dim`		| Configures the main displays intensity, from `0` to `15`.								|
+| `dim`		| Configures the main display intensity, from `0` to `15`.								|
 | `clr`		| Factory reset.																		|
 | --> `yes`	| Proceeds with factory reset. After a few seconds, Clear done (`clrd`) is displayed.	|
 | --> `no`	| Cancels the factory reset.															|
 
 !!! warning
-	Factory reset will erase the MLS800 configuration ==and all presets data== !
+	Factory reset will erase the MLS800 configuration ==and all presets data==!
 
 ## Firmware update
 
-Being open source, there is several ways you can get this done. Simply pick the one that suits you !
+Being open source, there are several ways you can get this done. Simply pick the one that suits you!
 
 ??? example "Flashing the firmware, the simple way"
 	1. Download the [latest release](https://github.com/blemasle/mls800-firmware/releases/latest) [![Latest release](https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600)](https://github.com/blemasle/mls800-firmware/releases/latest) and uncompress its content.
@@ -119,5 +119,5 @@ Being open source, there is several ways you can get this done. Simply pick the 
 
 ??? example "I'm a developer !"
 	1. Clone @blemasle/mls800-firmware
-	2. [Compile](software#compile) with the IDE of your choice (but seriously, ditch that Arduino IDE) using the `Arduino Micro` board
+	2. [Compile](software.md#compile) with the IDE of your choice (but seriously, ditch that Arduino IDE) using the `Arduino Micro` board
 	2. Upload with your IDE or the command line above
