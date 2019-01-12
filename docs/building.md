@@ -44,11 +44,11 @@ Once done, the `Edit` LED should blink.
 
 ![It's alive](assets/building-its-alive.webp)
 
-Next, follow [Flashing the firmware](manual#firmware-update) instructions.
+Next, follow [Flashing the firmware](manual.md#firmware-update) instructions.
 
 ## Ordering the case and display bezel
 
-All the files required to order the case can be downloaded over the [github repository](https://github.com/blemasle/mls800-case/relases/latest). As [I said](hardware#the-case) earlier, I ordered the case from [Protocase](https://www.protocase.com) - which I again highly recommend. The front panel bezel has been ordered from [Bay Plastics Ltd](http://bayplastics.co.uk), but I guess Protocase would be able to make it.  
+All the files required to order the case can be downloaded over the [github repository](https://github.com/blemasle/mls800-case/relases/latest). As [I said](hardware.md#the-case) earlier, I ordered the case from [Protocase](https://www.protocase.com) - which I again highly recommend. The front panel bezel has been ordered from [Bay Plastics Ltd](http://bayplastics.co.uk), but I guess Protocase would be able to make it.  
 
 All required information are included in the release files. Nevertheless, in case you need a sum up :  
 
