@@ -44,7 +44,7 @@ Once done, the `Edit` LED should blink.
 
 ![It's alive](assets/building-its-alive.webp)
 
-Next, follow [Flashing the firmware](manual#updating) instructions.
+Next, follow [Flashing the firmware](manual#firmware-update) instructions.
 
 ## Ordering the case and display bezel
 

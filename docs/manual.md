@@ -103,3 +103,21 @@ Editing a value works like in `Editing` mode. The editing indicator is on, ++"Ed
 !!! warning
 	Factory reset will erase the MLS800 configuration ==and all presets data== !
 
+## Firmware update
+
+Being open source, there is several ways you can get this done. Simply pick the one that suits you !
+
+??? example "Flashing the firmware, the simple way"
+	1. Download the [latest release](https://github.com/blemasle/mls800-firmware/releases/latest) [![Latest release](https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600)](https://github.com/blemasle/mls800-firmware/releases/latest) and uncompress its content.
+	2. Connect the MLS800 to your computer using a USB-B cable.
+	3. Run `update.bat` on Windows, `update.sh` on Linux
+
+??? example "I'm a command-line guy !"
+	1. Download the [latest release](https://github.com/blemasle/mls800-firmware/releases/latest) [![Latest release](https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600)](https://github.com/blemasle/mls800-firmware/releases/latest) and uncompress its content.
+	2. Connect the MLS800 to your computer using a USB-B cable.
+	3. Run `avrdude -C .avrdude.conf -c arduino -p m32u4 -b 57600 -D -P COM4 -U flash:w:MLS800.hex:i -vv`, replacing `COM4` by the actual MLS800 COM port on your machine
+
+??? example "I'm a developer !"
+	1. Clone @blemasle/mls800-firmware
+	2. [Compile](software#compile) with the IDE of your choice (but seriously, ditch that Arduino IDE) using the `Arduino Micro` board
+	2. Upload with your IDE or the command line above
