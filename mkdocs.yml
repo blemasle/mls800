@@ -28,10 +28,14 @@ markdown_extensions:
   - pymdownx.extra
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_alt
+  - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      base_path: 'docs'
+      check_paths: True
   - pymdownx.tasklist:
       custom_checkbox: True
   - smarty
