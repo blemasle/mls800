@@ -5,7 +5,25 @@
 **Global, nice presentation image or 3D rendering**  
 The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independant audio loops. It adapts itself to your gear and setup, not the other way around!
 
---8<-- "_features.md"
+--8<-- "_partials/features.md"
+
+Great, now what ?  
+The whole idea of a loop switcher is to enable or disable audio loops. Each loop consist of a send and a return signal, with something processing the signal in between.
+
+```flow
+in=>start: Previous loop
+out=>end: Next loop
+lc=>condition: Loop active ?
+l=>inputoutput: External unit
+lr=>inputoutput: Loop return
+
+in->lc(yes,bottom)->l
+lc(no)->lr
+l(right)->lr
+lr(right)->out
+```
+
+By chaining several loops, the MLS800 act as a router that directs your audio signal to up to 8 external processing units. Leaving you with 2^8 possibilies to route your signal !
 
 ## Know your gear
 
@@ -49,6 +67,14 @@ On power on, the MLS800 applies the last active preset and displays the firmware
 ## Modes
 
 The MLS800 acts around 3 modes :
+
+```flow
+playing=>operation: Playing
+learning=>operation: Learning
+editing=>operation: Editing
+
+playing(right)->learning(right)->editing
+```
 
 * `Playing` : Normal use. Display the active preset.
 * `Learning` : Waiting for a `Program Change` MIDI command. The main display and ++"Edit"++ are blinking.
@@ -121,3 +147,5 @@ Being open source, there are several ways you can get this done. Simply pick the
 	1. Clone @blemasle/mls800-firmware
 	2. [Compile](software.md#compile) with the IDE of your choice (but seriously, ditch that Arduino IDE) using the `Arduino Micro` board
 	2. Upload with your IDE or the command line above
+
+--8<-- "_partials/uml.md"

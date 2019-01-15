@@ -33,6 +33,14 @@ markdown_extensions:
       repo_url_shorthand: true
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: flow
+          class: uml-flowchart
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: sequence
+          class: uml-sequence-diagram
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.snippets:
       base_path: 'docs'
       check_paths: True
@@ -57,3 +65,5 @@ extra:
       link: https://github.com/blemasle
 extra_css:
   - extra.css
+extra_javascript:
+  - uml.js
