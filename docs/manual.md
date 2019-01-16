@@ -2,7 +2,8 @@
 
 ## Presentation
 
-**Global, nice presentation image or 3D rendering**  
+> TODO : product picture or rendering
+
 The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independant audio loops. It adapts itself to your gear and setup, not the other way around!
 
 --8<-- "_partials/features.md"
@@ -29,7 +30,7 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 
 ### Front panel
 
-**Front panel image, with numbered items (in edit mode)**
+> TODO : front annoted rendering
 
 1. ++"Menu"++ / Power indicator
 2. ++"Edit"++ / Mode indicator
@@ -42,7 +43,7 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 
 ### Back panel
 
-**Back panel image, with numbered items**
+> TODO : back annoted rendering
 
 1. Power supply input: 2mm ID, 5.5mm OD, positively centered. 9 to 12 VDC @ 1A minimum. Basically, any supply fitting an Arduino Uno will do.
 2. Reset switch
