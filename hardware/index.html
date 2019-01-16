@@ -1,0 +1,535 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="An open-source MIDI controlled loop switcher">
+      
+      
+        <link rel="canonical" href="https://blemasle.github.io/mls800/hardware/">
+      
+      
+        <meta name="author" content="Bertrand Lemasle">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Hardware - MLS800</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#hardware" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://blemasle.github.io/mls800/" title="MLS800" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                MLS800
+              </span>
+              <span class="md-header-nav__topic">
+                Hardware
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/blemasle/mls800-docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      blemasle/mls800-docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://blemasle.github.io/mls800/" title="MLS800" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    MLS800
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/blemasle/mls800-docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      blemasle/mls800-docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Hardware
+      </label>
+    
+    <a href="./" title="Hardware" class="md-nav__link md-nav__link--active">
+      Hardware
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-motherboard" title="The motherboard" class="md-nav__link">
+    The motherboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-input-board" title="The input board" class="md-nav__link">
+    The input board
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-case" title="The case" class="md-nav__link">
+    The case
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../building/" title="Building instructions" class="md-nav__link">
+      Building instructions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../manual/" title="User Manual" class="md-nav__link">
+      User Manual
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-motherboard" title="The motherboard" class="md-nav__link">
+    The motherboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-input-board" title="The input board" class="md-nav__link">
+    The input board
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-case" title="The case" class="md-nav__link">
+    The case
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/blemasle/mls800-docs/edit/master/docs/hardware.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">&para;</a></h1>
+<p>The MLS800 is built around two surface mounted PCBs: a motherboard that holds the main unit and rear connectors, and a daughter board that contains elements the user interacts with during use.  </p>
+<p>Those two boards fit in a custom designed stainless steel case with self-clinching fasteners and digital printing for a nice, professional-like finish.</p>
+<h2 id="the-motherboard">The motherboard<a class="headerlink" href="#the-motherboard" title="Permanent link">&para;</a></h2>
+<p>The MLS800 is based on the <a href="https://store.arduino.cc/usa/arduino-micro">Arduino Micro</a> design. As such, it is powered by an <a href="https://www.microchip.com/wwwproducts/en/ATmega32U4">ATmega32U4</a>. The ATmega32U4 does not need an additional IC to interface with a USB port and provides 2 hardware serial ports out of the box. The MIDI protocol being a serial communication protocol, this choice made perfect sense.  </p>
+<p>Connected to that processor are several ICs. A <a href="https://www.microchip.com/wwwproducts/en/MCP23017">MCP23017</a> port expander drives two <a href="https://www.ti.com/store/ti/en/p/product?p=ULN2803ADW">ULN2803ADW</a> NPN arrays. Each pair of NPN transistor drive one <a href="https://www.te.com/usa-en/product-6-1393788-8.html">V23079E1201B301</a> bistable relays. This design allows keeping things simple on every level. PCB traces are kept parallel and changes sides as few times as possible, while there is no complex bit manipulations to change loop states: port A (bit 0 to 7) of the MCP23017 turn the corresponding loop ON, while the other turn it off. The use of bistable relays allows reducing power consumption, as power is only needed while changing their state. Finally, an <a href="https://www.microchip.com/wwwproducts/en/en010828">24LC256</a> EEPROM is used for preset storage.</p>
+<p>The power is supplied by 2 <a href="https://www.ti.com/store/ti/en/p/product/?p=LM340MP-5.0/NOPB">LM340MP-5.0/NOPB</a> each capable of delivering 1.5A@5VDC.</p>
+<p><img alt="Main components iFixit style" src="../assets/hardware-motherboard-ifixit.jpg" /></p>
+<ul>
+    <li style="color:red">
+        <span style="color:black">ATmega32U4 main processor</span>
+    </li>
+    <li style="color:orange">
+        <span style="color:black">MCP23017 port expander</span>
+    </li>
+    <li style="color:green">
+        <span style="color:black">24LC256 256 Kb EEPROM</span>
+    </li>
+    <li style="color:yellow">
+        <span style="color:black">2 ULN2803ADW NPN arrays</span>
+    </li>
+    <li style="color:lightblue">
+        <span style="color:black">2 LM340 power supplier</span>
+    </li>
+</ul>
+
+<h2 id="the-input-board">The input board<a class="headerlink" href="#the-input-board" title="Permanent link">&para;</a></h2>
+<p>The input board is simply a daughter board that connects directly to the motherboard. It contains a <a href="http://optoelectronics.liteon.com/upload/download/DS-30-96-124/C5723HR.pdf">LTC-5723HR</a> 4 digits 7 segments display and 10 high quality illuminated <a href="https://www.apem.com/int/29-mec-switches">Apem MEC switches</a> switches (5GSH93582 combined with 1ES096 caps).</p>
+<p><a href="../assets/large/hardware-daughterboard.jpg"><img alt="Daughterboard" src="../assets/hardware-daughterboard.jpg" /></a></p>
+<p>The display and 8 of the switches are controlled by an <a href="https://ams.com/as1115">AS1115-BSST</a>, while the two remaining switches are controlled directly by the main processor. The AS1115 being capable of driving up to eight 7 segments, a neat trick is to consider the 8 LEDs of the loop switches as a fifth digit. Saving ATmega32U4 pins, power, and reducing component count at the same time!</p>
+<h2 id="the-case">The case<a class="headerlink" href="#the-case" title="Permanent link">&para;</a></h2>
+<p>The case is made out of 4 black painted and bent stainless steel sheets and assembled with self-clinching fasteners. It helps to keep the out surface smooth and gives the overall a professional-like finish. A laser cut acrylic bezel and the digitally printed front panel helps push that feeling even further.</p>
+<p><a href="../assets/large/hardware-rack-front-left.jpg"><img alt="Rack front left" src="../assets/hardware-rack-front-left.jpg" width="40%" /></a>&nbsp;&nbsp;
+<a href="../assets/large/hardware-rack-front-right.jpg"><img alt="Rack front right" src="../assets/hardware-rack-front-right.jpg" width="58%" /></a>  </p>
+<p><a href="../assets/large/hardware-rack-fasteners.jpg"><img alt="Self clinching fasteners" src="../assets/hardware-rack-fasteners.jpg" /></a></p>
+<p>Another choice I&rsquo;m really happy with is using <a href="https://www.neutrik.com/en/product/nsj8hc">NSJ8HC</a> stacked jacks header. Even if they are expensive, they reduce the PCB length, and also provide a tightening screw which helps relieve the pressure against the motherboard when inserting jacks.</p>
+<p><a href="../assets/large/hardware-rack-back-left.jpg"><img alt="Rack  left back" src="../assets/hardware-rack-back-left.jpg" /></a></p>
+<p>I&rsquo;ve sent the case files over to a Canadian company, <a href="https://www.protocase.com">Protocase</a>, and - oh boy - they&rsquo;ve done an outstanding job building it! The good thing is they&rsquo;re able to produce cases from start to finish, including printing them. The case you see on the pictures is the one I&rsquo;ve got straight out of the mail, including the screws! </p>
+<p>When one passes by my gear and ask about it, he does not notice that one of the racks is entirely &ldquo;home&rdquo; made. I really highly recommend <a href="https://www.protocase.com">Protocase</a> if you ever need this kind of service.</p>
+<p><a href="../assets/large/hardware-rack-back.jpg"><img alt="Rack back" src="../assets/hardware-rack-back.jpg" /></a>
+<a href="../assets/large/hardware-setup.jpg"><img alt="Rack running" src="../assets/hardware-setup.jpg" /></a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../building/" title="Building instructions" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Building instructions
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2013 - 2019 <a href="https://github.com/blemasle">Bertrand Lemasle</a>
+<br><span class="md-footer-custom-text">emoji provided free by </span><a href="http://www.emojione.com">EmojiOne</a>
+
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/blemasle" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="../uml.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

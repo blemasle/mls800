@@ -1,0 +1,644 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="An open-source MIDI controlled loop switcher">
+      
+      
+        <link rel="canonical" href="https://blemasle.github.io/mls800/building/">
+      
+      
+        <meta name="author" content="Bertrand Lemasle">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Building instructions - MLS800</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#building-instructions" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://blemasle.github.io/mls800/" title="MLS800" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                MLS800
+              </span>
+              <span class="md-header-nav__topic">
+                Building instructions
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/blemasle/mls800-docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      blemasle/mls800-docs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://blemasle.github.io/mls800/" title="MLS800" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    MLS800
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/blemasle/mls800-docs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      blemasle/mls800-docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../hardware/" title="Hardware" class="md-nav__link">
+      Hardware
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Building instructions
+      </label>
+    
+    <a href="./" title="Building instructions" class="md-nav__link md-nav__link--active">
+      Building instructions
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ordering-the-pcb" title="Ordering the PCB" class="md-nav__link">
+    Ordering the PCB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soldering-the-pcb" title="Soldering the PCB" class="md-nav__link">
+    Soldering the PCB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashing-the-firmware-on-a-blank-board" title="Flashing the firmware on a blank board" class="md-nav__link">
+    Flashing the firmware on a blank board
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ordering-the-case-and-display-bezel" title="Ordering the case and display bezel" class="md-nav__link">
+    Ordering the case and display bezel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" title="Assembly" class="md-nav__link">
+    Assembly
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../manual/" title="User Manual" class="md-nav__link">
+      User Manual
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ordering-the-pcb" title="Ordering the PCB" class="md-nav__link">
+    Ordering the PCB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soldering-the-pcb" title="Soldering the PCB" class="md-nav__link">
+    Soldering the PCB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashing-the-firmware-on-a-blank-board" title="Flashing the firmware on a blank board" class="md-nav__link">
+    Flashing the firmware on a blank board
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ordering-the-case-and-display-bezel" title="Ordering the case and display bezel" class="md-nav__link">
+    Ordering the case and display bezel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" title="Assembly" class="md-nav__link">
+    Assembly
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/blemasle/mls800-docs/edit/master/docs/building.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="building-instructions">Building instructions<a class="headerlink" href="#building-instructions" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Before you really consider this&hellip;</p>
+<p>I&rsquo;ve built this rack several years ago, and have been using it since then. However, I do not have physical access to the rack at the moment. I used some time off to publish this work, and in order to do so, I had to change some parts of the code. The 4 years old one I&rsquo;m using didn&rsquo;t build anymore. I&rsquo;m <mark>unable to test</mark> these changes at the moment, so please reach to me first if you really considering building the rack!</p>
+</div>
+<p>The project is built around three repositories :</p>
+<ul>
+<li><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/blemasle/mls800-pcb" title="GitHub Repository: blemasle/mls800-pcb">blemasle/mls800-pcb</a> : Motherboard and daughterboard PCBs</li>
+<li><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/blemasle/mls800-firmware" title="GitHub Repository: blemasle/mls800-firmware">blemasle/mls800-firmware</a> : Firmware that needs to be loaded onto the motherboard</li>
+<li><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/blemasle/mls800-case" title="GitHub Repository: blemasle/mls800-case">blemasle/mls800-case</a> : CAD files needed to produce the case</li>
+</ul>
+<p>While the PCB and firmware are mandatory, you can totally omit to build the case - which is by the way the most expensive part of the build.</p>
+<h2 id="ordering-the-pcb">Ordering the PCB<a class="headerlink" href="#ordering-the-pcb" title="Permanent link">&para;</a></h2>
+<p>Download the <a href="https://github.com/blemasle/mls800-pcb/releases/latest">latest release</a>. You&rsquo;ll find inside the Gerber files that can be used by the manufacturer of your choice. Just be aware that the PCB is uncommonly large (around 30cm) and that some manufacturers might refuse it. <a href="https://www.seeedstudio.com/fusion_pcb.html">Seeed</a> and <a href="https://oshpark.com">OSHPark</a> are good choices. I personally used Seeed because I needed several iterations before settling on a layout and OSHPark was too expensive for that.</p>
+<p><a href="../assets/building-pcb-top.png"><img alt="PCB top" src="../assets/building-pcb-top.png" /></a>
+<a href="../assets/building-pcb-bottom.png"><img alt="PCB bottom" src="../assets/building-pcb-bottom.png" /></a></p>
+<p>As of right now (January 2019), OSHPark charge around 183$ for 3 top notch, gold plated PCBs, while Seeed charge around 50$ for 5. I also still have some leftovers from the last batch 😉  </p>
+<h2 id="soldering-the-pcb">Soldering the PCB<a class="headerlink" href="#soldering-the-pcb" title="Permanent link">&para;</a></h2>
+<p>If you know how to solder SMD components, the PCB presents no difficulties whatsoever. If you don&rsquo;t, check out the excellent <a href="https://www.youtube.com/watch?v=b9FC9fAlfQE">Dave&rsquo;s EEVBlog tutorial</a>.  </p>
+<p>There are a lot of identical components in those two PCBs so it can feel a bit tedious after some time. Also, don&rsquo;t be greedy on the tin on the back connectors as solder joints are responsible for keeping your connector in place while inserting or removing plugs. If you decide to build the case some of that pressure will be relieved through back screws but this is just an <em>extra</em> layer of strengthening, you should not rely on it.</p>
+<h2 id="flashing-the-firmware-on-a-blank-board">Flashing the firmware on a blank board<a class="headerlink" href="#flashing-the-firmware-on-a-blank-board" title="Permanent link">&para;</a></h2>
+<p>After soldering the PCB, you&rsquo;ll need to flash the necessary bits to its processor to bring it to life. To do so, burn the Arduino micro bootloader through the standard ICSP port <code>P1</code>, the &#x25b6; indicating the pin <code>1</code>.</p>
+<p><img alt="ISCP header on pcb" src="../assets/building-icsp-header-pcb.jpg" />&nbsp;<img alt="ISCP header pinout" src="../assets/building-icsp-header.jpg" /></p>
+<p>You&rsquo;ll need either a programmer, or another Arduino with the <code>ArduinoISP</code> sketch loaded on to it. I usually dedicate an Arduino Nano to this task. A complete procedure can be found on the <a href="https://www.arduino.cc/en/Tutorial/ArduinoISP">Arduino website</a>.</p>
+<ul>
+<li>Upload the <code>ArduinoISP</code> sketch to a second arduino</li>
+<li>Carefully wire your programmer to the MLS800 PCB</li>
+<li>From the Arduino IDE, select the <code>Arduino micro</code> board and <code>Arduino as ISP</code> programmer</li>
+<li>Select the COM port of your programmer</li>
+<li>Hit <code>Burn Bootloader</code> command</li>
+</ul>
+<p>Once done, the <code>Edit</code> LED should blink.</p>
+<p><img alt="It's alive" src="../assets/building-its-alive.webp" /></p>
+<p>Next, follow <a href="../manual/#firmware-update">Flashing the firmware</a> instructions.</p>
+<h2 id="ordering-the-case-and-display-bezel">Ordering the case and display bezel<a class="headerlink" href="#ordering-the-case-and-display-bezel" title="Permanent link">&para;</a></h2>
+<p>All the files required to order the case can be downloaded over the <a href="https://github.com/blemasle/mls800-case/relases/latest">github repository</a>. As <a href="../hardware/#the-case">I said</a> earlier, I ordered the case from <a href="https://www.protocase.com">Protocase</a> - which I again highly recommend. The front panel bezel has been ordered from <a href="http://bayplastics.co.uk">Bay Plastics Ltd</a>, but I guess Protocase would be able to make it.  </p>
+<p>All required information are included in the release files. Nevertheless, in case you need a sum up :  </p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th align="right">Description</th>
+<th align="right">Thickness</th>
+<th align="right">Material / Technic</th>
+<th align="right">Color</th>
+<th align="right">Manufacturer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rack-Chassis</td>
+<td align="right">Rack case bottom</td>
+<td align="right">0.048&rdquo;</td>
+<td align="right">Cold rolled steel</td>
+<td align="right">Matte Black</td>
+<td align="right"><a href="https://www.protocase.com">Protocase</a></td>
+</tr>
+<tr>
+<td>Rack-Cover</td>
+<td align="right">Rack case top</td>
+<td align="right">0.048&rdquo;</td>
+<td align="right">Cold rolled steel</td>
+<td align="right">Matte Black</td>
+<td align="right"><a href="https://www.protocase.com">Protocase</a></td>
+</tr>
+<tr>
+<td>Rack-FrontPanel</td>
+<td align="right">Rack case front</td>
+<td align="right">0.060&rdquo;</td>
+<td align="right">Cold rolled steel</td>
+<td align="right">Matte Black</td>
+<td align="right"><a href="https://www.protocase.com">Protocase</a></td>
+</tr>
+<tr>
+<td>MountingBracket</td>
+<td align="right">Daughterboard mounting bracket</td>
+<td align="right">0.048&rdquo;</td>
+<td align="right">Cold rolled steel</td>
+<td align="right">Matte Black</td>
+<td align="right"><a href="https://www.protocase.com">Protocase</a></td>
+</tr>
+<tr>
+<td>MLS800.svg</td>
+<td align="right">Front and Back illustrations</td>
+<td align="right">❌</td>
+<td align="right">Digital printing</td>
+<td align="right">White</td>
+<td align="right"><a href="https://www.protocase.com">Protocase</a></td>
+</tr>
+<tr>
+<td>FrontPanel-Bezel</td>
+<td align="right">Main display bezel</td>
+<td align="right">0.118&rdquo;/3mm</td>
+<td align="right">Acrylic(Perspex)</td>
+<td align="right">4401 Red</td>
+<td align="right"><a href="http://bayplastics.co.uk">Bay Plastics Ltd</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="assembly">Assembly<a class="headerlink" href="#assembly" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>While I knew nothing about tolerances at the time and did not take those into account during my designs, I only had to remove one screw and not fully tighten another for the case to be perfectly aligned. Both problematic screws where on the front panel &ldquo;S&rdquo; mounting bracket, which I knew would be a very tight fit without using tolerances.</p>
+</div>
+<p>Now that you have all the pieces at hand, let&rsquo;s play some Lego&reg; 😄!<br />
+First, screw the motherboard to the Rack chassis, then the daughterboard to the mounting bracket. Do not forget to add rear screws to the stacked jack headers to relieve the pressure on the solder joints while inserting or removing jacks.</p>
+<p><a href="../assets/large/building-assembly-1.jpg"><img alt="Assembly in progress" src="../assets/building-assembly-1.jpg" /></a>  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that I decided to remove the bottom middle screw of the daughter board to avoid inducing tension to the PCB.</p>
+</div>
+<p>You can now place the mounting bracket on to the rack chassis, and connect the ribbon cable between the two PCBs.<br />
+Then, snap the bezel into the front panel. This should be a precise fit and should not require any rework and/or glue to make it stick. Screw the front panel and the cover together.</p>
+<p><a href="../assets/large/building-assembly-2.jpg"><img alt="Assembly in progress" src="../assets/building-assembly-2.jpg" /></a>  </p>
+<p>Finally, screw together the two subassemblies. You&rsquo;re done!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On my unit, the top right screw of the mounting bracket is not fully tightened. When it is, some of the switches do not properly work. It comes from the fact that the rack was designed without any tolerances consideration.<br />
+Knowing that, I consider it a miracle that I only have 2 minor flaws on the final product. That underlines once more Protocase&rsquo;s wonderful work. </p>
+</div>
+<p><a href="../assets/large/index-mls800.jpg"><img alt="Assembly done, front" src="../assets/index-mls800.jpg" /></a><br />
+<a href="../assets/large/hardware-rack-back.jpg"><img alt="Assembly done, back" src="../assets/hardware-rack-back.jpg" /></a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../hardware/" title="Hardware" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Hardware
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../manual/" title="User Manual" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                User Manual
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2013 - 2019 <a href="https://github.com/blemasle">Bertrand Lemasle</a>
+<br><span class="md-footer-custom-text">emoji provided free by </span><a href="http://www.emojione.com">EmojiOne</a>
+
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/blemasle" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="../uml.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
