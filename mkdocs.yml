@@ -5,8 +5,8 @@ site_author: Bertrand Lemasle
 site_url: https://blemasle.github.io/mls800/
 
 # Repository
-repo_name: 'blemasle/mls800-docs'
-repo_url: 'https://github.com/blemasle/mls800-docs'
+repo_name: 'blemasle/mls800'
+repo_url: 'https://github.com/blemasle/mls800'
 
 # Copyright
 copyright: |
