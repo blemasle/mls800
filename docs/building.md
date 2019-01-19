@@ -81,6 +81,6 @@ Finally, screw together the two subassemblies. You're done!
 	On my unit, the top right screw of the mounting bracket is not fully tightened. When it is, some of the switches do not properly work. It comes from the fact that the rack was designed without any tolerances consideration.  
 	Knowing that, I consider it a miracle that I only have 2 minor flaws on the final product. That underlines once more Protocase's wonderful work. 
 
-[![Assembly done, front](assets/index-mls800.jpg)](assets/large/index-mls800.jpg)  
+[![Assembly done, front](assets/hardware-rack-front.jpg)](assets/large/hardware-rack-front.jpg)  
 [![Assembly done, back](assets/hardware-rack-back.jpg)](assets/large/hardware-rack-back.jpg)
 
