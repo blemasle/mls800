@@ -18,6 +18,8 @@ copyright: |
 theme:
   name: material
   custom_dir: theme
+  palette:
+    primary: 'blue'
 
 # Extensions
 markdown_extensions:
