@@ -8,7 +8,7 @@ The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independan
 
 --8<-- "_partials/features.md"
 
-Great, now what ?
+Great, now what ?  
 The whole idea of a loop switcher is to enable or disable audio loops. Each loop consist of a send and a return signal, with something processing the signal in between.
 
 ```flow

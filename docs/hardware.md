@@ -22,13 +22,13 @@ The power is supplied by 2 [LM340MP-5.0/NOPB](https://www.ti.com/store/ti/en/p/p
         <span style="color:black">MCP23017 port expander</span>
     </li>
     <li style="color:green">
-        <span style="color:black">24LC256 256 Kb EEPROM</span>
+        <span style="color:black">24LC256 256Kb EEPROM</span>
     </li>
     <li style="color:yellow">
         <span style="color:black">2 ULN2803ADW NPN arrays</span>
     </li>
     <li style="color:lightblue">
-        <span style="color:black">2 LM340 power supplier</span>
+        <span style="color:black">2 LM340 regulators</span>
     </li>
 </ul>
 

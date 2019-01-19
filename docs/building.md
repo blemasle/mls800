@@ -1,11 +1,18 @@
 # Building instructions
 
-!!! warning "Before you really consider this..."
-    I've built this rack several years ago, and have been using it since then. However, I do not have physical access to the rack at the moment. I used some time off to publish this work, and in order to do so, I had to change some parts of the code. The 4 years old one I'm using didn't build anymore. I'm ==unable to test== these changes at the moment, so please reach to me first if you really considering building the rack!
+[![MLS800](assets/product-front.gif)](assets/large/product-front.png)  
 
 --8<-- "_partials/repositories.md"
 
  While the PCB and firmware are mandatory, you can totally omit to build the case - which is by the way the most expensive part of the build.
+
+## Important considerations
+
+!!! warning "Disclaimer"  
+    This project was merely a study case and meant for my personnal use. At the time, I knew almost nothing and had to learn everything. As a consequence, and while I did my best to built a "professional" product, it might have some flaws.
+
+!!! warning "Before you really consider this..."
+    I've built this rack several years ago, and have been using it since then. However, I do not have physical access to the rack at the moment. I used some time off to publish this work, and in order to do so, had to change some parts of the code. The 4 years old one I'm using didn't build anymore. I'm ==unable to test== these changes at the moment, so please reach to me first if you really considering building the rack!
 
 ## Ordering the PCB
 
