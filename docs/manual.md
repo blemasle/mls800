@@ -44,6 +44,14 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 		font-size: 1.5em;
 	}
 
+	rect.bubble-group {
+		fill: none;
+		stroke: #EF5350;
+		stroke-width: 4;
+		rx: 15;
+		ry: 15;
+	}
+
 	polyline.bubble-line {
 		fill: none;
 		marker-end: url(#arrow);
@@ -105,7 +113,8 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 			<text class="bubble-text">6</text>
 		</g>
 		<!-- Loop 3 to 8  -->
-		<polyline class="bubble-line" points="950,400 1010,258"/>
+		<rect class="bubble-group" x="795" y="190" width="458" height="70" />
+		<polyline class="bubble-line" points="950,400 1010,275"/>
 		<g transform="translate(950, 400)">
 			<use href="#bubble-back" />
 			<text class="bubble-text">7</text>
@@ -172,12 +181,14 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 			<text class="bubble-text">9</text>
 		</g>
 		<!-- Loops Send -->
-		<polyline class="bubble-line" points="760,360 790,265"/>
+		<rect class="bubble-group" x="540" y="205" width="620" height="50" />
+		<polyline class="bubble-line" points="760,360 790,270"/>
 		<g transform="translate(760, 360)">
 			<use href="#bubble-back" />
 			<text class="bubble-text">7</text>
 		</g>
 		<!-- Loops Return -->
+		<rect class="bubble-group" x="540" y="135" width="620" height="50" />
 		<polyline class="bubble-line" points="800,40 790,120"/>
 		<g transform="translate(800, 40)">
 			<use href="#bubble-back" />
