@@ -48,6 +48,12 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
       
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
       
     
     
@@ -68,7 +74,9 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +178,7 @@
   
 
 
-  <a href="https://github.com/blemasle/mls800-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/blemasle/mls800/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -179,7 +187,7 @@
       </div>
     
     <div class="md-source__repository">
-      blemasle/mls800-docs
+      blemasle/mls800
     </div>
   </a>
 
@@ -219,7 +227,7 @@
   
 
 
-  <a href="https://github.com/blemasle/mls800-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/blemasle/mls800/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -228,7 +236,7 @@
       </div>
     
     <div class="md-source__repository">
-      blemasle/mls800-docs
+      blemasle/mls800
     </div>
   </a>
 
@@ -529,14 +537,12 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/blemasle/mls800-docs/edit/master/docs/manual.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/blemasle/mls800/edit/master/docs/manual.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="user-manual">User Manual<a class="headerlink" href="#user-manual" title="Permanent link">&para;</a></h1>
 <h2 id="presentation">Presentation<a class="headerlink" href="#presentation" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>TODO : product picture or rendering</p>
-</blockquote>
+<p><a href="../assets/large/product-front-2.png"><img alt="MLS800" src="../assets/product-front-2.gif" /></a></p>
 <p>The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independant audio loops. It adapts itself to your gear and setup, not the other way around!</p>
 <ul>
 <li>8 independent audio loops</li>
@@ -561,9 +567,92 @@ lr(right)-&gt;out</code></pre>
 <p>By chaining several loops, the MLS800 act as a router that directs your audio signal to up to 8 external processing units. Leaving you with 2^8 possibilies to route your signal !</p>
 <h2 id="know-your-gear">Know your gear<a class="headerlink" href="#know-your-gear" title="Permanent link">&para;</a></h2>
 <h3 id="front-panel">Front panel<a class="headerlink" href="#front-panel" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>TODO : front annoted rendering</p>
-</blockquote>
+<style>
+
+    circle#bubble-back, .annotated-graphic marker {
+        fill: #EF5350;
+    }
+
+    .annotated-graphic polyline, .annotated-graphic rect {
+        fill: none;
+        stroke: #EF5350;
+        stroke-width: 4;
+    }
+
+    .annotated-graphic polyline {
+        marker-end: url(#arrow);
+    }
+
+    .annotated-graphic rect {
+        rx: 15;
+        ry: 15;
+    }
+
+    .annotated-graphic text {
+        stroke: white;
+        fill: white;
+        text-anchor: middle;
+        dominant-baseline: central;
+        font-size: 1.5em;
+    }
+</style>
+
+<p><svg viewBox="0 0 1269 448" width="100%" class="annotated-graphic"> 
+    <title>MLS800 front</title>
+    <defs>
+        <circle id="bubble-back" r="30" />
+        <!-- arrow -->
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" />
+        </marker>
+    </defs>
+    <g>
+        <image href="../assets/manual-front.gif" y="100" width="1269" height="248"/>
+        <!-- Menu -->
+        <polyline points="30,400 58,258"/>
+        <g transform="translate(30, 400)">
+            <use href="#bubble-back" />
+            <text>1</text>
+        </g>
+        <!-- Edit -->
+        <polyline points="180,400 158,258"/>
+        <g transform="translate(180, 400)">
+            <use href="#bubble-back" />
+            <text>2</text>
+        </g>
+        <!-- Main display -->
+        <polyline points="370,40 340,170"/>
+        <g transform="translate(370, 40)">
+            <use href="#bubble-back" />
+            <text>3</text>
+        </g>
+        <!-- Editing indicator -->
+        <polyline points="420,400 290,265"/>
+        <g transform="translate(420, 400)">
+            <use href="#bubble-back" />
+            <text>4</text>
+        </g>
+        <!-- Loop 1 / Up  -->
+        <polyline points="600,40 655,190"/>
+        <g transform="translate(600, 40)">
+            <use href="#bubble-back" />
+            <text>5</text>
+        </g>
+        <!-- Loop 2 / Down  -->
+        <polyline points="810,40 760,190"/>
+        <g transform="translate(810, 40)">
+            <use href="#bubble-back" />
+            <text>6</text>
+        </g>
+        <!-- Loop 3 to 8  -->
+        <rect x="795" y="190" width="458" height="70" />
+        <polyline points="950,400 1010,275"/>
+        <g transform="translate(950, 400)">
+            <use href="#bubble-back" />
+            <text>7</text>
+        </g>
+    </g>
+</svg></p>
 <ol>
 <li><span class="keys"><kbd>Menu</kbd></span> / Power indicator</li>
 <li><span class="keys"><kbd>Edit</kbd></span> / Mode indicator</li>
@@ -572,16 +661,74 @@ lr(right)-&gt;out</code></pre>
 <li>Loop <span class="keys"><kbd class="key-1">1</kbd></span> key / <span class="keys"><kbd class="key-arrow-up">Up</kbd></span></li>
 <li>Loop <span class="keys"><kbd class="key-2">2</kbd></span> key / <span class="keys"><kbd class="key-arrow-down">Down</kbd></span></li>
 <li>Loop <span class="keys"><kbd class="key-3">3</kbd></span> to <span class="keys"><kbd class="key-8">8</kbd></span> keys</li>
-<li>Mounting screws</li>
 </ol>
 <h3 id="back-panel">Back panel<a class="headerlink" href="#back-panel" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>TODO : back annoted rendering</p>
-</blockquote>
+<p><svg viewBox="0 0 1269 408" width="100%"  class="annotated-graphic">
+    <title>MLS800 back</title>
+    <g>
+        <image href="../assets/manual-back.gif" y="100" width="1269" height="208" />
+        <!-- Power input -->
+        <polyline points="90,40 70,195"/>
+        <g transform="translate(90, 40)">
+            <use href="#bubble-back" />
+            <text>1</text>
+        </g>
+        <!-- Reset input -->
+        <polyline points="70,360 110,258"/>
+        <g transform="translate(70, 360)">
+            <use href="#bubble-back" />
+            <text>2</text>
+        </g>
+        <!-- USB port -->
+        <polyline points="210,40 175,190"/>
+        <g transform="translate(210, 40)">
+            <use href="#bubble-back" />
+            <text>3</text>
+        </g>
+        <!-- MIDI In -->
+        <polyline points="230,360 245,260"/>
+        <g transform="translate(230, 360)">
+            <use href="#bubble-back" />
+            <text>4</text>
+        </g>
+        <!-- MIDI Thru -->
+        <polyline points="380,360 355,260"/>
+        <g transform="translate(380, 360)">
+            <use href="#bubble-back" />
+            <text>5</text>
+        </g>
+        <!-- Main In -->
+        <polyline points="480,40 495,190"/>
+        <g transform="translate(480, 40)">
+            <use href="#bubble-back" />
+            <text>9</text>
+        </g>
+        <!-- Loops Send -->
+        <rect x="540" y="205" width="620" height="50" />
+        <polyline points="760,360 790,270"/>
+        <g transform="translate(760, 360)">
+            <use href="#bubble-back" />
+            <text>7</text>
+        </g>
+        <!-- Loops Return -->
+        <rect x="540" y="135" width="620" height="50" />
+        <polyline points="800,40 790,120"/>
+        <g transform="translate(800, 40)">
+            <use href="#bubble-back" />
+            <text>8</text>
+        </g>
+        <!-- Main Out -->
+        <polyline points="1230,360 1200,265"/>
+        <g transform="translate(1230, 360)">
+            <use href="#bubble-back" />
+            <text>6</text>
+        </g>
+    </g>
+</svg></p>
 <ol>
 <li>Power supply input: 2mm ID, 5.5mm OD, positively centered. 9 to 12 VDC @ 1A minimum. Basically, any supply fitting an Arduino Uno will do.</li>
 <li>Reset switch</li>
-<li>USB port. Provides a Serial port and 1x MIDI In, 1x MIDI out ports. </li>
+<li>USB port. Provides a Serial port and 1x MIDI In, 1x MIDI out ports.</li>
 <li>MIDI Input</li>
 <li>MIDI Thru</li>
 <li>Main audio input</li>
@@ -591,8 +738,8 @@ lr(right)-&gt;out</code></pre>
 </ol>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
-<p>Always use the recommended power supply with the MLS800.<br />
-Do not exceed the maximum recommended voltage of 12VDC.<br />
+<p>Always use the recommended power supply with the MLS800.
+Do not exceed the maximum recommended voltage of 12VDC.
 The USB port does <em>not</em> provide power to the unit.</p>
 </div>
 <h2 id="first-use">First use<a class="headerlink" href="#first-use" title="Permanent link">&para;</a></h2>
@@ -610,7 +757,7 @@ playing(right)-&gt;learning(right)-&gt;editing</code></pre>
 <li><code>Learning</code> : Waiting for a <code>Program Change</code> MIDI command. The main display and <span class="keys"><kbd>Edit</kbd></span> are blinking.</li>
 <li><code>Editing</code> : Editing a preset. The main display editing indicator and <span class="keys"><kbd>Edit</kbd></span> are on.</li>
 </ul>
-<p>You pass from one mode to another by pressing <span class="keys"><kbd>Edit</kbd></span>.  </p>
+<p>You pass from one mode to another by pressing <span class="keys"><kbd>Edit</kbd></span>.</p>
 <h3 id="playing">Playing<a class="headerlink" href="#playing" title="Permanent link">&para;</a></h3>
 <p>The MLS800 displays the active preset and listens for an incoming MIDI <code>Program Change</code> message. If received, the corresponding preset number will be applied.</p>
 <div class="admonition note">

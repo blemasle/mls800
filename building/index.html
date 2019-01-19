@@ -48,6 +48,12 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
       
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
       
     
     
@@ -68,7 +74,9 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +178,7 @@
   
 
 
-  <a href="https://github.com/blemasle/mls800-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/blemasle/mls800/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -179,7 +187,7 @@
       </div>
     
     <div class="md-source__repository">
-      blemasle/mls800-docs
+      blemasle/mls800
     </div>
   </a>
 
@@ -219,7 +227,7 @@
   
 
 
-  <a href="https://github.com/blemasle/mls800-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/blemasle/mls800/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -228,7 +236,7 @@
       </div>
     
     <div class="md-source__repository">
-      blemasle/mls800-docs
+      blemasle/mls800
     </div>
   </a>
 
@@ -291,6 +299,13 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-considerations" title="Important considerations" class="md-nav__link">
+    Important considerations
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#ordering-the-pcb" title="Ordering the PCB" class="md-nav__link">
@@ -371,6 +386,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#important-considerations" title="Important considerations" class="md-nav__link">
+    Important considerations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ordering-the-pcb" title="Ordering the PCB" class="md-nav__link">
     Ordering the PCB
   </a>
@@ -421,14 +443,11 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/blemasle/mls800-docs/edit/master/docs/building.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/blemasle/mls800/edit/master/docs/building.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="building-instructions">Building instructions<a class="headerlink" href="#building-instructions" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Before you really consider this&hellip;</p>
-<p>I&rsquo;ve built this rack several years ago, and have been using it since then. However, I do not have physical access to the rack at the moment. I used some time off to publish this work, and in order to do so, I had to change some parts of the code. The 4 years old one I&rsquo;m using didn&rsquo;t build anymore. I&rsquo;m <mark>unable to test</mark> these changes at the moment, so please reach to me first if you really considering building the rack!</p>
-</div>
+<p><a href="../assets/large/product-front.png"><img alt="MLS800" src="../assets/product-front.gif" /></a>  </p>
 <p>The project is built around three repositories :</p>
 <ul>
 <li><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/blemasle/mls800-pcb" title="GitHub Repository: blemasle/mls800-pcb">blemasle/mls800-pcb</a> : Motherboard and daughterboard PCBs</li>
@@ -436,6 +455,15 @@
 <li><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/blemasle/mls800-case" title="GitHub Repository: blemasle/mls800-case">blemasle/mls800-case</a> : CAD files needed to produce the case</li>
 </ul>
 <p>While the PCB and firmware are mandatory, you can totally omit to build the case - which is by the way the most expensive part of the build.</p>
+<h2 id="important-considerations">Important considerations<a class="headerlink" href="#important-considerations" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Disclaimer</p>
+<p>This project was merely a study case and meant for my personnal use. At the time, I knew almost nothing and had to learn everything. As a consequence, and while I did my best to built a &ldquo;professional&rdquo; product, it might have some flaws.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Before you really consider this&hellip;</p>
+<p>I&rsquo;ve built this rack several years ago, and have been using it since then. However, I do not have physical access to the rack at the moment. I used some time off to publish this work, and in order to do so, had to change some parts of the code. The 4 years old one I&rsquo;m using didn&rsquo;t build anymore. I&rsquo;m <mark>unable to test</mark> these changes at the moment, so please reach to me first if you really considering building the rack!</p>
+</div>
 <h2 id="ordering-the-pcb">Ordering the PCB<a class="headerlink" href="#ordering-the-pcb" title="Permanent link">&para;</a></h2>
 <p>Download the <a href="https://github.com/blemasle/mls800-pcb/releases/latest">latest release</a>. You&rsquo;ll find inside the Gerber files that can be used by the manufacturer of your choice. Just be aware that the PCB is uncommonly large (around 30cm) and that some manufacturers might refuse it. <a href="https://www.seeedstudio.com/fusion_pcb.html">Seeed</a> and <a href="https://oshpark.com">OSHPark</a> are good choices. I personally used Seeed because I needed several iterations before settling on a layout and OSHPark was too expensive for that.</p>
 <p><a href="../assets/building-pcb-top.png"><img alt="PCB top" src="../assets/building-pcb-top.png" /></a>
@@ -544,7 +572,7 @@ Then, snap the bezel into the front panel. This should be a precise fit and shou
 <p>On my unit, the top right screw of the mounting bracket is not fully tightened. When it is, some of the switches do not properly work. It comes from the fact that the rack was designed without any tolerances consideration.<br />
 Knowing that, I consider it a miracle that I only have 2 minor flaws on the final product. That underlines once more Protocase&rsquo;s wonderful work. </p>
 </div>
-<p><a href="../assets/large/index-mls800.jpg"><img alt="Assembly done, front" src="../assets/index-mls800.jpg" /></a><br />
+<p><a href="../assets/large/hardware-rack-front.jpg"><img alt="Assembly done, front" src="../assets/hardware-rack-front.jpg" /></a><br />
 <a href="../assets/large/hardware-rack-back.jpg"><img alt="Assembly done, back" src="../assets/hardware-rack-back.jpg" /></a></p>
                 
                   
