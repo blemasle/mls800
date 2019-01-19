@@ -8,7 +8,7 @@ The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independan
 
 --8<-- "_partials/features.md"
 
-Great, now what ?  
+Great, now what ?
 The whole idea of a loop switcher is to enable or disable audio loops. Each loop consist of a send and a return signal, with something processing the signal in between.
 
 ```flow
@@ -31,93 +31,88 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 ### Front panel
 
 <style>
-	circle.bubble-circle {
+
+	circle#bubble-back, .annotated-graphic marker {
 		fill: #EF5350;
-		r: 30;
 	}
 
-	text.bubble-text {
+	.annotated-graphic polyline, .annotated-graphic rect {
+		fill: none;
+		stroke: #EF5350;
+		stroke-width: 4;
+	}
+
+	.annotated-graphic polyline {
+		marker-end: url(#arrow);
+	}
+
+	.annotated-graphic rect {
+		rx: 15;
+		ry: 15;
+	}
+	
+	.annotated-graphic text {
 		stroke: white;
 		fill: white;
 		text-anchor: middle;
 		dominant-baseline: central;
 		font-size: 1.5em;
 	}
-
-	rect.bubble-group {
-		fill: none;
-		stroke: #EF5350;
-		stroke-width: 4;
-		rx: 15;
-		ry: 15;
-	}
-
-	polyline.bubble-line {
-		fill: none;
-		marker-end: url(#arrow);
-		stroke: #EF5350;
-		stroke-width: 4;
-	}
-
-	marker.bubble-line {
-		fill: #EF5350;
-	}
 </style>
 
-<svg viewBox="0 0 1269 448" width="100%">
+<svg viewBox="0 0 1269 448" width="100%" class="annotated-graphic">	
 	<title>MLS800 front</title>
 	<defs>
-		<circle id="bubble-back" class="bubble-circle" />
-		<text id="bubble-text" stroke="white" text-anchor="middle" dominant-baseline="central" fill="white" />
+		<circle id="bubble-back" r="30" />
 		<!-- arrow -->
-		<marker id="arrow" class="bubble-line" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+		<marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
 			<path d="M0,0 L0,6 L9,3 z" />
 		</marker>
 	</defs>
 	<g>
-		<image href="../assets/manual-front.gif" y="100" width="100%" />
+		<image href="../assets/manual-front.gif" y="100" width="1269" height="248"/>
 		<!-- Menu -->
-		<polyline class="bubble-line" points="30,400 58,258"/>
+		<polyline points="30,400 58,258"/>
 		<g transform="translate(30, 400)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">1</text>
+			<text>1</text>
 		</g>
 		<!-- Edit -->
-		<polyline class="bubble-line" points="180,400 158,258"/>
+		<polyline points="180,400 158,258"/>
 		<g transform="translate(180, 400)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">2</text>
+			<text>2</text>
 		</g>
 		<!-- Main display -->
-		<polyline class="bubble-line" points="370,40 340,170"/>
+		<polyline points="370,40 340,170"/>
 		<g transform="translate(370, 40)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">3</text>
+			<text>3</text>
 		</g>
 		<!-- Editing indicator -->
-		<polyline class="bubble-line" points="420,400 290,265"/>
+		<polyline points="420,400 290,265"/>
 		<g transform="translate(420, 400)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">4</text>
+			<text>4</text>
 		</g>
 		<!-- Loop 1 / Up  -->
-		<polyline class="bubble-line" points="600,40 655,190"/>
+		<polyline points="600,40 655,190"/>
 		<g transform="translate(600, 40)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">5</text>
+			<text>5</text>
 		</g>
 		<!-- Loop 2 / Down  -->
-		<polyline class="bubble-line" points="810,40 760,190"/>
+		<polyline points="810,40 760,190"/>
 		<g transform="translate(810, 40)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">6</text>
+			<text>6</text>
 		</g>
 		<!-- Loop 3 to 8  -->
-		<rect class="bubble-group" x="795" y="190" width="458" height="70" />
-		<polyline class="bubble-line" points="950,400 1010,275"/>
+		<rect x="795" y="190" width="458" height="70" />
+		<polyline points="950,400 1010,275"/>
 		<g transform="translate(950, 400)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">7</text>
+			<text>7</text>
 		</g>
 	</g>
 </svg>
@@ -132,80 +127,72 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 
 ### Back panel
 
-<svg viewBox="0 0 1269 408" width="100%">
+<svg viewBox="0 0 1269 408" width="100%"  class="annotated-graphic">
 	<title>MLS800 back</title>
-	<defs>
-		<circle id="bubble-back" class="bubble-circle" />
-		<text id="bubble-text" stroke="white" text-anchor="middle" dominant-baseline="central" fill="white" />
-		<!-- arrow -->
-		<marker id="arrow" class="bubble-line" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
-			<path d="M0,0 L0,6 L9,3 z" />
-		</marker>
-	</defs>
 	<g>
-		<image href="../assets/manual-back.gif" y="100" width="100%" />
+		<image href="../assets/manual-back.gif" y="100" width="1269" height="208" />
 		<!-- Power input -->
-		<polyline class="bubble-line" points="90,40 70,195"/>
+		<polyline points="90,40 70,195"/>
 		<g transform="translate(90, 40)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">1</text>
+			<text>1</text>
 		</g>
 		<!-- Reset input -->
-		<polyline class="bubble-line" points="70,360 110,258"/>
+		<polyline points="70,360 110,258"/>
 		<g transform="translate(70, 360)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">2</text>
+			<text>2</text>
 		</g>
 		<!-- USB port -->
-		<polyline class="bubble-line" points="210,40 175,190"/>
+		<polyline points="210,40 175,190"/>
 		<g transform="translate(210, 40)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">3</text>
+			<text>3</text>
 		</g>
 		<!-- MIDI In -->
-		<polyline class="bubble-line" points="230,360 245,260"/>
+		<polyline points="230,360 245,260"/>
 		<g transform="translate(230, 360)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">4</text>
+			<text>4</text>
 		</g>
 		<!-- MIDI Thru -->
-		<polyline class="bubble-line" points="380,360 355,260"/>
+		<polyline points="380,360 355,260"/>
 		<g transform="translate(380, 360)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">5</text>
+			<text>5</text>
 		</g>
 		<!-- Main In -->
-		<polyline class="bubble-line" points="480,40 495,190"/>
+		<polyline points="480,40 495,190"/>
 		<g transform="translate(480, 40)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">9</text>
+			<text>9</text>
 		</g>
 		<!-- Loops Send -->
-		<rect class="bubble-group" x="540" y="205" width="620" height="50" />
-		<polyline class="bubble-line" points="760,360 790,270"/>
+		<rect x="540" y="205" width="620" height="50" />
+		<polyline points="760,360 790,270"/>
 		<g transform="translate(760, 360)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">7</text>
+			<text>7</text>
 		</g>
 		<!-- Loops Return -->
-		<rect class="bubble-group" x="540" y="135" width="620" height="50" />
-		<polyline class="bubble-line" points="800,40 790,120"/>
+		<rect x="540" y="135" width="620" height="50" />
+		<polyline points="800,40 790,120"/>
 		<g transform="translate(800, 40)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">8</text>
+			<text>8</text>
 		</g>
 		<!-- Main Out -->
-		<polyline class="bubble-line" points="1230,360 1200,265"/>
+		<polyline points="1230,360 1200,265"/>
 		<g transform="translate(1230, 360)">
 			<use href="#bubble-back" />
-			<text class="bubble-text">6</text>
+			<text>6</text>
 		</g>
 	</g>
 </svg>
 
 1. Power supply input: 2mm ID, 5.5mm OD, positively centered. 9 to 12 VDC @ 1A minimum. Basically, any supply fitting an Arduino Uno will do.
 2. Reset switch
-3. USB port. Provides a Serial port and 1x MIDI In, 1x MIDI out ports. 
+3. USB port. Provides a Serial port and 1x MIDI In, 1x MIDI out ports.
 4. MIDI Input
 5. MIDI Thru
 6. Main audio input
@@ -214,8 +201,8 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 9. Main audio output
 
 !!! danger
-	Always use the recommended power supply with the MLS800.  
-	Do not exceed the maximum recommended voltage of 12VDC.  
+	Always use the recommended power supply with the MLS800.
+	Do not exceed the maximum recommended voltage of 12VDC.
 	The USB port does *not* provide power to the unit.
 
 
@@ -239,7 +226,7 @@ playing(right)->learning(right)->editing
 * `Learning` : Waiting for a `Program Change` MIDI command. The main display and ++"Edit"++ are blinking.
 * `Editing` : Editing a preset. The main display editing indicator and ++"Edit"++ are on.
 
-You pass from one mode to another by pressing ++"Edit"++.  
+You pass from one mode to another by pressing ++"Edit"++.
 
 ### Playing
 
