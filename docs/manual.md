@@ -2,7 +2,7 @@
 
 ## Presentation
 
-> TODO : product picture or rendering
+[![MLS800](assets/product-front-2.gif)](assets/large/product-front-2.png)
 
 The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independant audio loops. It adapts itself to your gear and setup, not the other way around!
 
@@ -30,7 +30,88 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 
 ### Front panel
 
-> TODO : front annoted rendering
+<style>
+	circle.bubble-circle {
+		fill: #EF5350;
+		r: 30;
+	}
+
+	text.bubble-text {
+		stroke: white;
+		fill: white;
+		text-anchor: middle;
+		dominant-baseline: central;
+		font-size: 1.5em;
+	}
+
+	polyline.bubble-line {
+		fill: none;
+		marker-end: url(#arrow);
+		stroke: #EF5350;
+		stroke-width: 4;
+	}
+
+	marker.bubble-line {
+		fill: #EF5350;
+	}
+</style>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1269 448" width="100%">
+	<title>MLS800 front</title>
+	<defs>
+		<circle id="bubble-back" class="bubble-circle" />
+		<text id="bubble-text" stroke="white" text-anchor="middle" dominant-baseline="central" fill="white" />
+		<!-- arrow -->
+		<marker id="arrow" class="bubble-line" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+			<path d="M0,0 L0,6 L9,3 z" />
+		</marker>
+	</defs>
+	<g>
+		<image href="../assets/manual-front.gif" id="mls800-front-background" y="100" width="100%" />
+		<!-- Menu -->
+		<polyline id="menu-line" class="bubble-line" points="30,400 58,258"/>
+		<g transform="translate(30, 400)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">1</text>
+		</g>
+		<!-- Edit -->
+		<polyline class="bubble-line" points="180,400 158,258"/>
+		<g transform="translate(180, 400)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">2</text>
+		</g>
+		<!-- Main display -->
+		<polyline class="bubble-line" points="370,40 340,170"/>
+		<g transform="translate(370, 40)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">3</text>
+		</g>
+		<!-- Editing indicator -->
+		<polyline class="bubble-line" points="420,400 290,265"/>
+		<g transform="translate(420, 400)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">4</text>
+		</g>
+		<!-- Loop 1 / Up  -->
+		<polyline class="bubble-line" points="600,40 650,190"/>
+		<g transform="translate(600, 40)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">5</text>
+		</g>
+		<!-- Loop 2 / Down  -->
+		<polyline class="bubble-line" points="810,40 770,190"/>
+		<g transform="translate(810, 40)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">6</text>
+		</g>
+		<!-- Loop 3 to 8  -->
+		<polyline class="bubble-line" points="950,400 1010,258"/>
+		<g transform="translate(950, 400)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">7</text>
+		</g>
+	</g>
+</svg>
 
 1. ++"Menu"++ / Power indicator
 2. ++"Edit"++ / Mode indicator
@@ -39,11 +120,10 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 5. Loop ++1++ key / ++arrow-up++
 6. Loop ++2++ key / ++arrow-down++
 7. Loop ++3++ to ++8++ keys
-8. Mounting screws
 
 ### Back panel
 
-> TODO : back annoted rendering
+![MLS800 back](assets/manual-back.gif)
 
 1. Power supply input: 2mm ID, 5.5mm OD, positively centered. 9 to 12 VDC @ 1A minimum. Basically, any supply fitting an Arduino Uno will do.
 2. Reset switch
