@@ -56,7 +56,7 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 	}
 </style>
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1269 448" width="100%">
+<svg viewBox="0 0 1269 448" width="100%">
 	<title>MLS800 front</title>
 	<defs>
 		<circle id="bubble-back" class="bubble-circle" />
@@ -67,9 +67,9 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 		</marker>
 	</defs>
 	<g>
-		<image href="../assets/manual-front.gif" id="mls800-front-background" y="100" width="100%" />
+		<image href="../assets/manual-front.gif" y="100" width="100%" />
 		<!-- Menu -->
-		<polyline id="menu-line" class="bubble-line" points="30,400 58,258"/>
+		<polyline class="bubble-line" points="30,400 58,258"/>
 		<g transform="translate(30, 400)">
 			<use href="#bubble-back" />
 			<text class="bubble-text">1</text>
@@ -93,13 +93,13 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 			<text class="bubble-text">4</text>
 		</g>
 		<!-- Loop 1 / Up  -->
-		<polyline class="bubble-line" points="600,40 650,190"/>
+		<polyline class="bubble-line" points="600,40 655,190"/>
 		<g transform="translate(600, 40)">
 			<use href="#bubble-back" />
 			<text class="bubble-text">5</text>
 		</g>
 		<!-- Loop 2 / Down  -->
-		<polyline class="bubble-line" points="810,40 770,190"/>
+		<polyline class="bubble-line" points="810,40 760,190"/>
 		<g transform="translate(810, 40)">
 			<use href="#bubble-back" />
 			<text class="bubble-text">6</text>
@@ -123,7 +123,74 @@ By chaining several loops, the MLS800 act as a router that directs your audio si
 
 ### Back panel
 
-![MLS800 back](assets/manual-back.gif)
+<svg viewBox="0 0 1269 408" width="100%">
+	<title>MLS800 back</title>
+	<defs>
+		<circle id="bubble-back" class="bubble-circle" />
+		<text id="bubble-text" stroke="white" text-anchor="middle" dominant-baseline="central" fill="white" />
+		<!-- arrow -->
+		<marker id="arrow" class="bubble-line" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+			<path d="M0,0 L0,6 L9,3 z" />
+		</marker>
+	</defs>
+	<g>
+		<image href="../assets/manual-back.gif" y="100" width="100%" />
+		<!-- Power input -->
+		<polyline class="bubble-line" points="90,40 70,195"/>
+		<g transform="translate(90, 40)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">1</text>
+		</g>
+		<!-- Reset input -->
+		<polyline class="bubble-line" points="70,360 110,258"/>
+		<g transform="translate(70, 360)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">2</text>
+		</g>
+		<!-- USB port -->
+		<polyline class="bubble-line" points="210,40 175,190"/>
+		<g transform="translate(210, 40)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">3</text>
+		</g>
+		<!-- MIDI In -->
+		<polyline class="bubble-line" points="230,360 245,260"/>
+		<g transform="translate(230, 360)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">4</text>
+		</g>
+		<!-- MIDI Thru -->
+		<polyline class="bubble-line" points="380,360 355,260"/>
+		<g transform="translate(380, 360)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">5</text>
+		</g>
+		<!-- Main In -->
+		<polyline class="bubble-line" points="480,40 495,190"/>
+		<g transform="translate(480, 40)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">9</text>
+		</g>
+		<!-- Loops Send -->
+		<polyline class="bubble-line" points="760,360 790,265"/>
+		<g transform="translate(760, 360)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">7</text>
+		</g>
+		<!-- Loops Return -->
+		<polyline class="bubble-line" points="800,40 790,120"/>
+		<g transform="translate(800, 40)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">8</text>
+		</g>
+		<!-- Main Out -->
+		<polyline class="bubble-line" points="1230,360 1200,265"/>
+		<g transform="translate(1230, 360)">
+			<use href="#bubble-back" />
+			<text class="bubble-text">6</text>
+		</g>
+	</g>
+</svg>
 
 1. Power supply input: 2mm ID, 5.5mm OD, positively centered. 9 to 12 VDC @ 1A minimum. Basically, any supply fitting an Arduino Uno will do.
 2. Reset switch
