@@ -4,12 +4,11 @@
 
 --8<-- "_partials/repositories.md"
 
- While the PCB and firmware are mandatory, you can totally omit to build the case - which is the most expensive part of the build.
+While the PCB and firmware are mandatory, you can totally omit to build the enclosure - which is the most expensive part of the build.
 
 ## Important considerations
 
-!!! warning "Disclaimer"  
-    This project was merely a study case and meant for my personal use. At the time, I knew almost nothing and had to learn everything. As a consequence, and while I did my best to built a "professional" product, it might have some flaws.
+--8<-- "_partials/disclaimer.md"
 
 !!! warning "Before you really consider this..."
     I've built this rack several years ago, and have been using it since then. However, I do not have physical access to the rack at the moment. I used some time off to publish this work, and in order to do so, I had to change some parts of the code. The 4 years old one I'm using didn't build anymore. I'm ==unable to test== these changes at the moment, so please reach to me first if you really considering building the rack!
@@ -25,9 +24,9 @@ As of right now (January 2019), OSHPark charge around 183$ for 3 top notch, gold
 
 ## Soldering the PCB
 
-If you know how to solder SMD components, the PCB presents no difficulties whatsoever. If you don't, check out the excellent [Dave's EEVBlog tutorial](https://www.youtube.com/watch?v=b9FC9fAlfQE).  
+If you know how to solder SMD components, the PCB presents no difficulties whatsoever. If you don't, check out this excellent [Dave's EEVBlog tutorial](https://www.youtube.com/watch?v=b9FC9fAlfQE).  
 
-There are a lot of identical components in those two PCBs so it can feel a bit tedious after some time. Also, don't be greedy on the tin on the back connectors as solder joints are responsible for keeping your connector in place while inserting or removing plugs. If you decide to build the case some of that pressure will be relieved through back screws but this is just an *extra* layer of strengthening, you should not rely on it.
+There are a lot of identical components in those two PCBs so it can feel a bit tedious after some time. Also, don't be greedy on the tin on the back connectors as solder joints are responsible for keeping your connector in place while inserting or removing plugs. If you decide to build the enclosure some of that pressure will be relieved through back screws but this is just an *extra* layer of strengthening, you should not rely on it.
 
 ## Flashing the firmware on a blank board
 
@@ -51,9 +50,9 @@ Next, follow [Flashing the firmware](manual.md#firmware-update) instructions.
 
 ## Ordering the case and display bezel
 
-All the files required to order the case can be downloaded over the [github repository](https://github.com/blemasle/mls800-case/relases/latest). As [I said](hardware.md#the-case) earlier, I ordered the case from [Protocase](https://www.protocase.com) - which I again highly recommend. The front panel bezel has been ordered from [Bay Plastics Ltd](http://bayplastics.co.uk), but I guess Protocase would be able to make it.  
+All the files required to order the enclosure can be downloaded over the [github repository](https://github.com/blemasle/mls800-enclosure/relases/latest). As [I said](hardware.md#the-enclosure) earlier, I choose [Protocase](https://www.protocase.com) - which I again highly recommend - to produce the case parts. The front panel bezel has been ordered from [Bay Plastics Ltd](http://bayplastics.co.uk), but I guess Protocase would be able to make it.  
 
-All required information are included in the release files. Nevertheless, in case you need a sum up :  
+All required information are included in the release files. Nevertheless, and because the only way to release files with Solidworks seems to create a flat directory structure, here is you need a sum up :  
 
 Part			 | Description						| Thickness 		| Material / Technic| Color 		| Manufacturer 							| 
 -----------------|---------------------------------:|------------------:|------------------:|--------------:|--------------------------------------:|
@@ -61,7 +60,7 @@ Rack-Chassis	 | Rack case bottom					| 0.048"			| Cold rolled steel | Matte Blac
 Rack-Cover		 | Rack case top					| 0.048"			| Cold rolled steel | Matte Black	| [Protocase](https://www.protocase.com)
 Rack-FrontPanel  | Rack case front					| 0.060"			| Cold rolled steel | Matte Black	| [Protocase](https://www.protocase.com)
 MountingBracket	 | Daughterboard mounting bracket	| 0.048"			| Cold rolled steel | Matte Black	| [Protocase](https://www.protocase.com)
-MLS800.svg		 | Front and Back illustrations		| :x:				| Digital printing	| White			| [Protocase](https://www.protocase.com)
+mls800 REV 3 - GRAPHICS - v2.svg	| Front and Back illustrations		| :x:				| Digital printing	| White			| [Protocase](https://www.protocase.com)
 FrontPanel-Bezel | Main display bezel				| 0.118"/3mm		| Acrylic(Perspex)	| 4401 Red		| [Bay Plastics Ltd](http://bayplastics.co.uk)
 
 ## Assembly

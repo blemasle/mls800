@@ -2,7 +2,7 @@
 
 The MLS800 is built around two surface mounted PCBs: a motherboard that holds the main unit and rear connectors, and a daughter board that contains elements the user interacts with during use.  
 
-Those two boards fit in a custom designed stainless steel case with self-clinching fasteners and digital printing for a nice, professional-like finish.
+Those two boards fit in a custom designed hot rolled steel enclosure with self-clinching fasteners and digital printing for a nice, professional-like finish.
 
 [![MLS800](assets/product-back-2.gif)](assets/large/product-back-2.png)
 
@@ -42,9 +42,9 @@ The input board is simply a daughter board that connects directly to the motherb
 
 The display and 8 of the switches are controlled by an [AS1115-BSST](https://ams.com/as1115), while the two remaining switches are controlled directly by the main processor. The AS1115 being capable of driving up to eight 7 segments, a neat trick is to consider the 8 LEDs of the loop switches as a fifth digit. Saving ATmega32U4 pins, power, and reducing component count at the same time!
 
-## The case
+## The enclosure
 
-The case is made out of 4 black painted and bent stainless steel sheets and assembled with self-clinching fasteners. It helps to keep the out surface smooth and gives the overall a professional-like finish. A laser cut acrylic bezel and the digitally printed front panel helps push that feeling even further.
+The enclosure is made out of 4 black painted and bent hot rolled steel sheets and assembled with self-clinching fasteners. It helps to keep the out surface smooth and gives the overall a professional-like finish. A laser cut acrylic bezel and the digitally printed front panel helps push that feeling even further.
 
 [![Rack front left](assets/hardware-rack-front-left.jpg){: width="39%"}](assets/large/hardware-rack-front-left.jpg)&nbsp;&nbsp;
 [![Rack front right](assets/hardware-rack-front-right.jpg){: width="58%"}](assets/large/hardware-rack-front-right.jpg)  
@@ -55,7 +55,7 @@ Another choice I'm really happy with is using [NSJ8HC](https://www.neutrik.com/e
 
 [![Rack  left back](assets/hardware-rack-back-left.jpg)](assets/large/hardware-rack-back-left.jpg)
 
-I've sent the case files over to a Canadian company, [Protocase](https://www.protocase.com), and - oh boy - they've done an outstanding job building it! The good thing is they're able to produce cases from start to finish, including printing them. The case you see on the pictures is the one I've got straight out of the mail, including the screws! 
+I've sent the case files over to a Canadian company, [Protocase](https://www.protocase.com), and - oh boy - they've done an outstanding job building it! The good thing is they're able to produce parts from start to finish, including printing them. The enclosure you see on the pictures is the one I've got straight out of the mail, including the screws! 
 
 When one passes by my gear and ask about it, he does not notice that one of the racks is entirely "home" made. I really highly recommend [Protocase](https://www.protocase.com) if you ever need this kind of service.
 
