@@ -26,6 +26,7 @@ markdown_extensions:
   - meta
   - codehilite
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.extra
   - pymdownx.emoji:
@@ -56,6 +57,7 @@ markdown_extensions:
 nav:
   - Home: 'index.md'
   - 'hardware.md'
+  - 'firmware.md'
   - 'building.md'
   - 'manual.md'
 

@@ -291,7 +291,7 @@ Being open source, there are several ways you can get this done. Simply pick the
 
 ??? example "I'm a developer !"
 	1. Clone @blemasle/mls800-firmware
-	2. [Compile](software.md#compile) with the IDE of your choice (but seriously, ditch that Arduino IDE) using the `Arduino Micro` board
+	2. [Compiling](firmware.md#compile) with the IDE of your choice (but seriously, ditch that Arduino IDE) using the `Arduino Micro` board
 	2. Upload with your IDE or the command line above
 
 --8<-- "_partials/uml.md"
