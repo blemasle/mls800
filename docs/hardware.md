@@ -4,11 +4,13 @@ The MLS800 is built around two surface mounted PCBs: a motherboard that holds th
 
 Those two boards fit in a custom designed stainless steel case with self-clinching fasteners and digital printing for a nice, professional-like finish.
 
+[![MLS800](assets/product-back-2.gif)](assets/large/product-back-2.png)
+
 ## The motherboard
 
 The MLS800 is based on the [Arduino Micro](https://store.arduino.cc/usa/arduino-micro) design. As such, it is powered by an [ATmega32U4](https://www.microchip.com/wwwproducts/en/ATmega32U4). The ATmega32U4 does not need an additional IC to interface with a USB port and provides 2 hardware serial ports out of the box. The MIDI protocol being a serial communication protocol, this choice made perfect sense.  
 
-Connected to that processor are several ICs. A [MCP23017](https://www.microchip.com/wwwproducts/en/MCP23017) port expander drives two [ULN2803ADW](https://www.ti.com/store/ti/en/p/product?p=ULN2803ADW) NPN arrays. Each pair of NPN transistor drive one [V23079E1201B301](https://www.te.com/usa-en/product-6-1393788-8.html) bistable relays. This design allows keeping things simple on every level. PCB traces are kept parallel and changes sides as few times as possible, while there is no complex bit manipulations to change loop states: port A (bit 0 to 7) of the MCP23017 turn the corresponding loop ON, while the other turn it off. The use of bistable relays allows reducing power consumption, as power is only needed while changing their state. Finally, an [24LC256](https://www.microchip.com/wwwproducts/en/en010828) EEPROM is used for preset storage.
+Connected to that processor are several ICs. A [MCP23017](https://www.microchip.com/wwwproducts/en/MCP23017) port expander drives two [ULN2803ADW](https://www.ti.com/store/ti/en/p/product?p=ULN2803ADW) NPN arrays. Each pair of NPN transistor drive one [V23079E1201B301](https://www.te.com/usa-en/product-6-1393788-8.html) bistable relays. This design allows to keeps things simple on every level. PCB traces are kept parallel and changes sides as few times as possible, and port A of the MCP23017 is used to turn loops ON while port B turn them off. Bistable relays allows reducing power consumption, as power is only needed while changing their state. Finally, an [24LC256](https://www.microchip.com/wwwproducts/en/en010828) EEPROM is used for preset storage.
 
 The power is supplied by 2 [LM340MP-5.0/NOPB](https://www.ti.com/store/ti/en/p/product/?p=LM340MP-5.0/NOPB) each capable of delivering 1.5A@5VDC.
 
@@ -44,7 +46,7 @@ The display and 8 of the switches are controlled by an [AS1115-BSST](https://ams
 
 The case is made out of 4 black painted and bent stainless steel sheets and assembled with self-clinching fasteners. It helps to keep the out surface smooth and gives the overall a professional-like finish. A laser cut acrylic bezel and the digitally printed front panel helps push that feeling even further.
 
-[![Rack front left](assets/hardware-rack-front-left.jpg){: width="40%"}](assets/large/hardware-rack-front-left.jpg)&nbsp;&nbsp;
+[![Rack front left](assets/hardware-rack-front-left.jpg){: width="39%"}](assets/large/hardware-rack-front-left.jpg)&nbsp;&nbsp;
 [![Rack front right](assets/hardware-rack-front-right.jpg){: width="58%"}](assets/large/hardware-rack-front-right.jpg)  
 
 [![Self clinching fasteners](assets/hardware-rack-fasteners.jpg)](assets/large/hardware-rack-fasteners.jpg)

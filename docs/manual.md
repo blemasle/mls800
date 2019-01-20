@@ -4,12 +4,12 @@
 
 [![MLS800](assets/product-front-2.gif)](assets/large/product-front-2.png)
 
-The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independant audio loops. It adapts itself to your gear and setup, not the other way around!
+The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independent audio loops. It adapts itself to your gear and setup, not the other way around!
 
 --8<-- "_partials/features.md"
 
-Great, now what ?  
-The whole idea of a loop switcher is to enable or disable audio loops. Each loop consist of a send and a return signal, with something processing the signal in between.
+Great, now what?  
+The whole idea of a loop switcher is to enable or disable audio loops. Each loop consists of a send and a return signal, with something processing the signal in between.
 
 ```flow
 in=>start: Previous loop
@@ -24,7 +24,7 @@ l(right)->lr
 lr(right)->out
 ```
 
-By chaining several loops, the MLS800 act as a router that directs your audio signal to up to 8 external processing units. Leaving you with 2^8 possibilies to route your signal !
+By chaining several loops, the MLS800 acts as a router that directs your audio signal to up to 8 external processing units. Leaving you with 2<sup>8</sup> possibilities to route your signal!
 
 ## Know your gear
 
@@ -287,7 +287,7 @@ Being open source, there are several ways you can get this done. Simply pick the
 ??? example "I'm a command-line guy !"
 	1. Download the [latest release](https://github.com/blemasle/mls800-firmware/releases/latest) [![Latest release](https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600)](https://github.com/blemasle/mls800-firmware/releases/latest) and uncompress its content.
 	2. Connect the MLS800 to your computer using a USB-B cable.
-	3. Run `avrdude -C .avrdude.conf -c arduino -p m32u4 -b 57600 -D -P COM4 -U flash:w:MLS800.hex:i -vv`, replacing `COM4` by the actual MLS800 COM port on your machine
+	3. Run `avrdude -C avrdude.conf -c arduino -p m32u4 -b 57600 -D -P COM4 -U flash:w:MLS800.hex:i -vv`, replacing `COM4` by the actual MLS800 COM port on your machine
 
 ??? example "I'm a developer !"
 	1. Clone @blemasle/mls800-firmware
