@@ -272,6 +272,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../firmware/" title="Firmware" class="md-nav__link">
+      Firmware
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -452,17 +464,17 @@
 <ul>
 <li><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/blemasle/mls800-pcb" title="GitHub Repository: blemasle/mls800-pcb">blemasle/mls800-pcb</a> : Motherboard and daughterboard PCBs</li>
 <li><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/blemasle/mls800-firmware" title="GitHub Repository: blemasle/mls800-firmware">blemasle/mls800-firmware</a> : Firmware that needs to be loaded onto the motherboard</li>
-<li><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/blemasle/mls800-case" title="GitHub Repository: blemasle/mls800-case">blemasle/mls800-case</a> : CAD files needed to produce the case</li>
+<li><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/blemasle/mls800-enclosure" title="GitHub Repository: blemasle/mls800-enclosure">blemasle/mls800-enclosure</a> : CAD files needed to produce the enclosure</li>
 </ul>
-<p>While the PCB and firmware are mandatory, you can totally omit to build the case - which is by the way the most expensive part of the build.</p>
+<p>While the PCB and firmware are mandatory, you can totally omit to build the enclosure - which is the most expensive part of the build.</p>
 <h2 id="important-considerations">Important considerations<a class="headerlink" href="#important-considerations" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Disclaimer</p>
-<p>This project was merely a study case and meant for my personnal use. At the time, I knew almost nothing and had to learn everything. As a consequence, and while I did my best to built a &ldquo;professional&rdquo; product, it might have some flaws.</p>
+<p>The present project was a personal study case to see I close I could come to a &ldquo;professional&rdquo; product. I knew almost nothing at the time and had to learn everything. As a consequence, and while I did my best, the finished result is not flawless.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Before you really consider this&hellip;</p>
-<p>I&rsquo;ve built this rack several years ago, and have been using it since then. However, I do not have physical access to the rack at the moment. I used some time off to publish this work, and in order to do so, had to change some parts of the code. The 4 years old one I&rsquo;m using didn&rsquo;t build anymore. I&rsquo;m <mark>unable to test</mark> these changes at the moment, so please reach to me first if you really considering building the rack!</p>
+<p>I&rsquo;ve built this rack several years ago, and have been using it since then. However, I do not have physical access to the rack at the moment. I used some time off to publish this work, and in order to do so, I had to change some parts of the code. The 4 years old one I&rsquo;m using didn&rsquo;t build anymore. I&rsquo;m <mark>unable to test</mark> these changes at the moment, so please reach to me first if you really considering building the rack!</p>
 </div>
 <h2 id="ordering-the-pcb">Ordering the PCB<a class="headerlink" href="#ordering-the-pcb" title="Permanent link">&para;</a></h2>
 <p>Download the <a href="https://github.com/blemasle/mls800-pcb/releases/latest">latest release</a>. You&rsquo;ll find inside the Gerber files that can be used by the manufacturer of your choice. Just be aware that the PCB is uncommonly large (around 30cm) and that some manufacturers might refuse it. <a href="https://www.seeedstudio.com/fusion_pcb.html">Seeed</a> and <a href="https://oshpark.com">OSHPark</a> are good choices. I personally used Seeed because I needed several iterations before settling on a layout and OSHPark was too expensive for that.</p>
@@ -470,14 +482,14 @@
 <a href="../assets/building-pcb-bottom.png"><img alt="PCB bottom" src="../assets/building-pcb-bottom.png" /></a></p>
 <p>As of right now (January 2019), OSHPark charge around 183$ for 3 top notch, gold plated PCBs, while Seeed charge around 50$ for 5. I also still have some leftovers from the last batch 😉  </p>
 <h2 id="soldering-the-pcb">Soldering the PCB<a class="headerlink" href="#soldering-the-pcb" title="Permanent link">&para;</a></h2>
-<p>If you know how to solder SMD components, the PCB presents no difficulties whatsoever. If you don&rsquo;t, check out the excellent <a href="https://www.youtube.com/watch?v=b9FC9fAlfQE">Dave&rsquo;s EEVBlog tutorial</a>.  </p>
-<p>There are a lot of identical components in those two PCBs so it can feel a bit tedious after some time. Also, don&rsquo;t be greedy on the tin on the back connectors as solder joints are responsible for keeping your connector in place while inserting or removing plugs. If you decide to build the case some of that pressure will be relieved through back screws but this is just an <em>extra</em> layer of strengthening, you should not rely on it.</p>
+<p>If you know how to solder SMD components, the PCB presents no difficulties whatsoever. If you don&rsquo;t, check out this excellent <a href="https://www.youtube.com/watch?v=b9FC9fAlfQE">Dave&rsquo;s EEVBlog tutorial</a>.  </p>
+<p>There are a lot of identical components in those two PCBs so it can feel a bit tedious after some time. Also, don&rsquo;t be greedy on the tin on the back connectors as solder joints are responsible for keeping your connector in place while inserting or removing plugs. If you decide to build the enclosure some of that pressure will be relieved through back screws but this is just an <em>extra</em> layer of strengthening, you should not rely on it.</p>
 <h2 id="flashing-the-firmware-on-a-blank-board">Flashing the firmware on a blank board<a class="headerlink" href="#flashing-the-firmware-on-a-blank-board" title="Permanent link">&para;</a></h2>
 <p>After soldering the PCB, you&rsquo;ll need to flash the necessary bits to its processor to bring it to life. To do so, burn the Arduino micro bootloader through the standard ICSP port <code>P1</code>, the &#x25b6; indicating the pin <code>1</code>.</p>
 <p><img alt="ISCP header on pcb" src="../assets/building-icsp-header-pcb.jpg" />&nbsp;<img alt="ISCP header pinout" src="../assets/building-icsp-header.jpg" /></p>
-<p>You&rsquo;ll need either a programmer, or another Arduino with the <code>ArduinoISP</code> sketch loaded on to it. I usually dedicate an Arduino Nano to this task. A complete procedure can be found on the <a href="https://www.arduino.cc/en/Tutorial/ArduinoISP">Arduino website</a>.</p>
+<p>You&rsquo;ll need either a programmer or another Arduino with the <code>ArduinoISP</code> sketch loaded on to it. I usually dedicate an Arduino Nano to this task. A complete procedure can be found on the <a href="https://www.arduino.cc/en/Tutorial/ArduinoISP">Arduino website</a>.</p>
 <ul>
-<li>Upload the <code>ArduinoISP</code> sketch to a second arduino</li>
+<li>Upload the <code>ArduinoISP</code> sketch to a second Arduino</li>
 <li>Carefully wire your programmer to the MLS800 PCB</li>
 <li>From the Arduino IDE, select the <code>Arduino micro</code> board and <code>Arduino as ISP</code> programmer</li>
 <li>Select the COM port of your programmer</li>
@@ -487,8 +499,8 @@
 <p><img alt="It's alive" src="../assets/building-its-alive.webp" /></p>
 <p>Next, follow <a href="../manual/#firmware-update">Flashing the firmware</a> instructions.</p>
 <h2 id="ordering-the-case-and-display-bezel">Ordering the case and display bezel<a class="headerlink" href="#ordering-the-case-and-display-bezel" title="Permanent link">&para;</a></h2>
-<p>All the files required to order the case can be downloaded over the <a href="https://github.com/blemasle/mls800-case/relases/latest">github repository</a>. As <a href="../hardware/#the-case">I said</a> earlier, I ordered the case from <a href="https://www.protocase.com">Protocase</a> - which I again highly recommend. The front panel bezel has been ordered from <a href="http://bayplastics.co.uk">Bay Plastics Ltd</a>, but I guess Protocase would be able to make it.  </p>
-<p>All required information are included in the release files. Nevertheless, in case you need a sum up :  </p>
+<p>All the files required to order the enclosure can be downloaded over the <a href="https://github.com/blemasle/mls800-enclosure/relases/latest">github repository</a>. As <a href="../hardware/#the-enclosure">I said</a> earlier, I choose <a href="https://www.protocase.com">Protocase</a> - which I again highly recommend - to produce the case parts. The front panel bezel has been ordered from <a href="http://bayplastics.co.uk">Bay Plastics Ltd</a>, but I guess Protocase would be able to make it.  </p>
+<p>All required information are included in the release files. Nevertheless, and because the only way to release files with Solidworks seems to create a flat directory structure, here is you need a sum up :  </p>
 <table>
 <thead>
 <tr>
@@ -534,7 +546,7 @@
 <td align="right"><a href="https://www.protocase.com">Protocase</a></td>
 </tr>
 <tr>
-<td>MLS800.svg</td>
+<td>mls800 REV 3 - GRAPHICS - v2.svg</td>
 <td align="right">Front and Back illustrations</td>
 <td align="right">❌</td>
 <td align="right">Digital printing</td>
@@ -594,7 +606,7 @@ Knowing that, I consider it a miracle that I only have 2 minor flaws on the fina
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../hardware/" title="Hardware" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../firmware/" title="Firmware" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -603,7 +615,7 @@ Knowing that, I consider it a miracle that I only have 2 minor flaws on the fina
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Hardware
+                Firmware
               </span>
             </div>
           </a>
