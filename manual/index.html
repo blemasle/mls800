@@ -332,8 +332,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#know-your-gear" title="Know your gear" class="md-nav__link">
-    Know your gear
+  <a href="#the-unit" title="The unit" class="md-nav__link">
+    The unit
   </a>
   
     <nav class="md-nav">
@@ -452,8 +452,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#know-your-gear" title="Know your gear" class="md-nav__link">
-    Know your gear
+  <a href="#the-unit" title="The unit" class="md-nav__link">
+    The unit
   </a>
   
     <nav class="md-nav">
@@ -555,12 +555,12 @@
                 <h1 id="user-manual">User Manual<a class="headerlink" href="#user-manual" title="Permanent link">&para;</a></h1>
 <h2 id="presentation">Presentation<a class="headerlink" href="#presentation" title="Permanent link">&para;</a></h2>
 <p><a href="../assets/large/product-front-2.png"><img alt="MLS800" src="../assets/product-front-2.gif" /></a></p>
-<p>The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independent audio loops. It adapts itself to your gear and setup, not the other way around!</p>
+<p>The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 audio loops. It adapts itself to your gear and setup, not the other way around!</p>
 <ul>
-<li>8 independent audio loops</li>
+<li>8 audio loops</li>
 <li>128 presets</li>
-<li>Active preset is remotely controlled through <code>Program Change</code> MIDI messages</li>
-<li>Easy to read through a 4 digits 7 segments display and 9 illuminated switches</li>
+<li>Active preset is remotely selected through <code>Program Change</code> MIDI messages</li>
+<li>Easy to read through a 4 digits 7 segments display and illuminated switches</li>
 <li>Open source</li>
 </ul>
 <p>Great, now what?<br />
@@ -577,7 +577,17 @@ l(right)-&gt;lr
 lr(right)-&gt;out</code></pre>
 
 <p>By chaining several loops, the MLS800 acts as a router that directs your audio signal to up to 8 external processing units. Leaving you with 2<sup>8</sup> possibilities to route your signal!</p>
-<h2 id="know-your-gear">Know your gear<a class="headerlink" href="#know-your-gear" title="Permanent link">&para;</a></h2>
+<p><pre class="uml-flowchart"><code>in=&gt;start: Main input
+out=&gt;end: Main output
+l1=&gt;inputoutput: Loop 1
+l2=&gt;inputoutput: Loop 2
+letc=&gt;inputoutput: ...
+l7=&gt;inputoutput: Loop 7
+l8=&gt;inputoutput: Loop 8
+
+in(right)-&gt;l1(right)-&gt;l2(right)-&gt;letc(right)-&gt;l7(right)-&gt;l8(right)-&gt;out</code></pre>
+You could even chain multiple unit to offer even more possibilities</p>
+<h2 id="the-unit">The unit<a class="headerlink" href="#the-unit" title="Permanent link">&para;</a></h2>
 <h3 id="front-panel">Front panel<a class="headerlink" href="#front-panel" title="Permanent link">&para;</a></h3>
 <style>
 
@@ -771,21 +781,23 @@ playing(right)-&gt;learning(right)-&gt;editing</code></pre>
 </ul>
 <p>You pass from one mode to another by pressing <span class="keys"><kbd>Edit</kbd></span>.</p>
 <h3 id="playing">Playing<a class="headerlink" href="#playing" title="Permanent link">&para;</a></h3>
-<p>The MLS800 displays the active preset and listens for an incoming MIDI <code>Program Change</code> message. If received, the corresponding preset number will be applied.</p>
+<p>The MLS800 displays the active preset and listens for an incoming MIDI <code>Program Change</code> message. If received, the corresponding preset number will be applied. For instance, the <code>Program Change 54</code> will load and activate the preset <code>54</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can manually change the active preset using <span class="keys"><kbd class="key-arrow-up">Up</kbd></span> or <span class="keys"><kbd class="key-arrow-down">Down</kbd></span>.</p>
+<p>While in <code>Playing</code> mode, you can manually change the active preset using <span class="keys"><kbd class="key-arrow-up">Up</kbd></span> or <span class="keys"><kbd class="key-arrow-down">Down</kbd></span>.</p>
 </div>
 <h3 id="learning">Learning<a class="headerlink" href="#learning" title="Permanent link">&para;</a></h3>
 <p>The MLS800 main display and <span class="keys"><kbd>Edit</kbd></span> are blinking, while waiting for an incoming <code>Program Change</code> message. Upon receiving one, the current preset state will remain unchanged, and the unit will switch to <code>Editing</code> mode for the requested preset number.</p>
-<div class="admonition tip">
-<p class="admonition-title">Copying a preset</p>
-<p>You can use the fact that the current state will remain unchanged to copy a preset to a new location.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Editing the current preset</p>
-<p>Simply press <span class="keys"><kbd>Edit</kbd></span> a second time while in <code>Learning</code> mode to edit the current preset.</p>
-</div>
+<details class="tip"><summary>Copying a preset</summary><p>You can use the fact that the current state will remain unchanged to copy a preset to a new location.</p>
+<ol>
+<li>In <code>Playing</code> mode, select the preset you want to copy</li>
+<li>Switch to <code>Learning</code> mode by pressing <span class="keys"><kbd>Edit</kbd></span></li>
+<li>Send the <code>Program Change</code> message for where you want the preset to be copied</li>
+<li>You&rsquo;re now in <code>Editing</code> mode. Edit the preset to your needs and press <span class="keys"><kbd>Edit</kbd></span> again to save it.</li>
+</ol>
+</details>
+<details class="tip"><summary>Editing the current preset</summary><p>Simply press <span class="keys"><kbd>Edit</kbd></span> a second time while in <code>Learning</code> mode to edit the current preset.</p>
+</details>
 <h3 id="editing">Editing<a class="headerlink" href="#editing" title="Permanent link">&para;</a></h3>
 <p>The editing indicator and <span class="keys"><kbd>Edit</kbd></span> are on. Use keys <span class="keys"><kbd class="key-1">1</kbd></span> to <span class="keys"><kbd class="key-8">8</kbd></span> to change to the corresponding loop state. Validate your changes by pressing <span class="keys"><kbd>Edit</kbd></span>, or cancel them by pressing <span class="keys"><kbd>Menu</kbd></span>.</p>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
@@ -865,22 +877,17 @@ playing(right)-&gt;learning(right)-&gt;editing</code></pre>
 <p>Factory reset will erase the MLS800 configuration <mark>and all presets data</mark>!</p>
 </div>
 <h2 id="firmware-update">Firmware update<a class="headerlink" href="#firmware-update" title="Permanent link">&para;</a></h2>
-<p>Being open source, there are several ways you can get this done. Simply pick the one that suits you!</p>
-<details class="example"><summary>Flashing the firmware, the simple way</summary><ol>
-<li>Download the <a href="https://github.com/blemasle/mls800-firmware/releases/latest">latest release</a> <a href="https://github.com/blemasle/mls800-firmware/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600" /></a> and uncompress its content.</li>
+<p>Being open source, there are several ways you can get this done. You will however certainly need an AVR development environment like the Arduino framework.
+<code>avrdude</code> refers to the avrdude executable packed with such environment, usually with <code>avrdude.conf</code> near it.</p>
+<details class="example"><summary>Flashing the firmware</summary><ol>
+<li>Download the <a href="https://github.com/blemasle/mls800-firmware/releases/latest">latest release</a> <a href="https://github.com/blemasle/mls800-firmware/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600" /></a></li>
 <li>Connect the MLS800 to your computer using a USB-B cable.</li>
-<li>Run <code>update.bat</code> on Windows, <code>update.sh</code> on Linux</li>
-</ol>
-</details>
-<details class="example"><summary>I&rsquo;m a command-line guy !</summary><ol>
-<li>Download the <a href="https://github.com/blemasle/mls800-firmware/releases/latest">latest release</a> <a href="https://github.com/blemasle/mls800-firmware/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600" /></a> and uncompress its content.</li>
-<li>Connect the MLS800 to your computer using a USB-B cable.</li>
-<li>Run <code>avrdude -C avrdude.conf -c arduino -p m32u4 -b 57600 -D -P COM4 -U flash:w:MLS800.hex:i -vv</code>, replacing <code>COM4</code> by the actual MLS800 COM port on your machine</li>
+<li>Run <code>avrdude -C avrdude.conf -v -pm32u4 -carduino -b57600 -PCOM1 -Uflash:w:mls800.hex:i</code> (replacing <code>COM1</code> by your actual port)</li>
 </ol>
 </details>
 <details class="example"><summary>I&rsquo;m a developer !</summary><ol>
 <li>Clone <a class="magiclink magiclink-github magiclink-repository" href="https://github.com/blemasle/mls800-firmware" title="GitHub Repository: blemasle/mls800-firmware">blemasle/mls800-firmware</a></li>
-<li><a href="../firmware/#compile">Compiling</a> with the IDE of your choice (but seriously, ditch that Arduino IDE) using the <code>Arduino Micro</code> board</li>
+<li><a href="../firmware/#compile">Compiling</a> with the IDE of your choice using the <code>Arduino Micro</code> board</li>
 <li>Upload with your IDE or the command line above</li>
 </ol>
 </details>
