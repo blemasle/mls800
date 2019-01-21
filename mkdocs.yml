@@ -3,6 +3,7 @@ site_name: MLS800
 site_description: An open-source MIDI controlled loop switcher
 site_author: Bertrand Lemasle
 site_url: https://blemasle.github.io/mls800/
+site_image: assets/product-preview.png
 
 # Repository
 repo_name: 'blemasle/mls800'
