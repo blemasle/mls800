@@ -295,12 +295,13 @@ Editing a value works like in `Editing` mode. The editing indicator is on, ++"Ed
 
 ## Firmware update
 
-Being open source, there are several ways you can get this done. Simply pick the one that suits you!
+Being open source, there are several ways you can get this done. You will however certainly need an AVR development environment like the Arduino framework.
+`avrdude` refers to the avrdude executable packed with such environment, usually with `avrdude.conf` near it.
 
 ??? example "Flashing the firmware"
-	1. Download the [latest release](https://github.com/blemasle/mls800-firmware/releases/latest) [![Latest release](https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600)](https://github.com/blemasle/mls800-firmware/releases/latest) and uncompress its content.
+	1. Download the [latest release](https://github.com/blemasle/mls800-firmware/releases/latest) [![Latest release](https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600)](https://github.com/blemasle/mls800-firmware/releases/latest)
 	2. Connect the MLS800 to your computer using a USB-B cable.
-	3. Run `avrdude -C avrdude.conf -v -pm32u4 -carduino -b57600 -PCOM1 -Uflash:w:MLS800.hex:i` (replacing `COM1` by your actual port)
+	3. Run `avrdude -C avrdude.conf -v -pm32u4 -carduino -b57600 -PCOM1 -Uflash:w:mls800.hex:i` (replacing `COM1` by your actual port)
 
 ??? example "I'm a developer !"
 	1. Clone @blemasle/mls800-firmware
