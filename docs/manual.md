@@ -4,7 +4,7 @@
 
 [![MLS800](assets/product-front-2.gif)](assets/large/product-front-2.png)
 
-The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 independent audio loops. It adapts itself to your gear and setup, not the other way around!
+The MLS800 is a very easy to use MIDI controlled Loop Switcher with 8 audio loops. It adapts itself to your gear and setup, not the other way around!
 
 --8<-- "_partials/features.md"
 
@@ -26,7 +26,20 @@ lr(right)->out
 
 By chaining several loops, the MLS800 acts as a router that directs your audio signal to up to 8 external processing units. Leaving you with 2<sup>8</sup> possibilities to route your signal!
 
-## Know your gear
+```flow
+in=>start: Main input
+out=>end: Main output
+l1=>inputoutput: Loop 1
+l2=>inputoutput: Loop 2
+letc=>inputoutput: ...
+l7=>inputoutput: Loop 7
+l8=>inputoutput: Loop 8
+
+in(right)->l1(right)->l2(right)->letc(right)->l7(right)->l8(right)->out
+```
+You could even chain multiple unit to offer even more possibilities
+
+## The unit
 
 ### Front panel
 
@@ -230,19 +243,24 @@ You pass from one mode to another by pressing ++"Edit"++.
 
 ### Playing
 
-The MLS800 displays the active preset and listens for an incoming MIDI `Program Change` message. If received, the corresponding preset number will be applied.
+The MLS800 displays the active preset and listens for an incoming MIDI `Program Change` message. If received, the corresponding preset number will be applied. For instance, the `Program Change 54` will load and activate the preset `54`.
 
 !!! note
-	You can manually change the active preset using ++arrow-up++ or ++arrow-down++.
+	While in `Playing` mode, you can manually change the active preset using ++arrow-up++ or ++arrow-down++.
 
 ### Learning
 
 The MLS800 main display and ++"Edit"++ are blinking, while waiting for an incoming `Program Change` message. Upon receiving one, the current preset state will remain unchanged, and the unit will switch to `Editing` mode for the requested preset number.
 
-!!! tip "Copying a preset"
+??? tip "Copying a preset"
 	You can use the fact that the current state will remain unchanged to copy a preset to a new location.
 
-!!! tip "Editing the current preset"
+	1. In `Playing` mode, select the preset you want to copy
+	2. Switch to `Learning` mode by pressing ++"Edit"++
+	3. Send the `Program Change` message for where you want the preset to be copied
+	4. You're now in `Editing` mode. Edit the preset to your needs and press ++"Edit"++ again to save it.
+
+??? tip "Editing the current preset"
 	Simply press ++"Edit"++ a second time while in `Learning` mode to edit the current preset.
 
 ### Editing
@@ -279,19 +297,14 @@ Editing a value works like in `Editing` mode. The editing indicator is on, ++"Ed
 
 Being open source, there are several ways you can get this done. Simply pick the one that suits you!
 
-??? example "Flashing the firmware, the simple way"
+??? example "Flashing the firmware"
 	1. Download the [latest release](https://github.com/blemasle/mls800-firmware/releases/latest) [![Latest release](https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600)](https://github.com/blemasle/mls800-firmware/releases/latest) and uncompress its content.
 	2. Connect the MLS800 to your computer using a USB-B cable.
-	3. Run `update.bat` on Windows, `update.sh` on Linux
-
-??? example "I'm a command-line guy !"
-	1. Download the [latest release](https://github.com/blemasle/mls800-firmware/releases/latest) [![Latest release](https://img.shields.io/github/release/blemasle/mls800-firmware.svg?maxAge=3600)](https://github.com/blemasle/mls800-firmware/releases/latest) and uncompress its content.
-	2. Connect the MLS800 to your computer using a USB-B cable.
-	3. Run `avrdude -C avrdude.conf -c arduino -p m32u4 -b 57600 -D -P COM4 -U flash:w:MLS800.hex:i -vv`, replacing `COM4` by the actual MLS800 COM port on your machine
+	3. Run `avrdude -C avrdude.conf -v -pm32u4 -carduino -b57600 -PCOM1 -Uflash:w:MLS800.hex:i` (replacing `COM1` by your actual port)
 
 ??? example "I'm a developer !"
 	1. Clone @blemasle/mls800-firmware
-	2. [Compiling](firmware.md#compile) with the IDE of your choice (but seriously, ditch that Arduino IDE) using the `Arduino Micro` board
+	2. [Compiling](firmware.md#compile) with the IDE of your choice using the `Arduino Micro` board
 	2. Upload with your IDE or the command line above
 
 --8<-- "_partials/uml.md"

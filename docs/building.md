@@ -4,7 +4,7 @@
 
 --8<-- "_partials/repositories.md"
 
-While the PCB and firmware are mandatory, you can totally omit to build the enclosure - which is the most expensive part of the build.
+While the PCB and firmware are mandatory, you can totally omit to build the enclosure, which is the most expensive part of the build.
 
 ## Important considerations
 
