@@ -13,6 +13,18 @@ While the PCB and firmware are mandatory, you can totally omit to build the encl
 !!! warning "Before you really consider this..."
     I've built this rack several years ago, and have been using it since then. However, I do not have physical access to the rack at the moment. I used some time off to publish this work, and in order to do so, I had to change some parts of the code. The 4 years old one I'm using didn't build anymore. I'm ==unable to test== these changes at the moment, so please reach to me first if you really considering building the rack!
 
+## Costs and suppliers
+
+That project *is not* cheap to build :grinning:. Please note that these are converted prices as each part of the build has been payed in a different currency.
+
+| Part			| Supplier 												| Cost ($)	| Cost(€) 	| Comment 									|
+|---------------|-------------------------------------------------------|-----------|-----------|-------------------------------------------|
+| PCB			| [Seeed](https://www.seeedstudio.com/fusion_pcb.html)	| 56	 	| 50		| As of January 2019						|
+| Components	| [Mouser](https://www.mouser.com/) 					| 155 		| 137		| As of January 2019						|
+| Bezel			| [Bay Plastics Ltd](http://bayplastics.co.uk)			| 20		| 17		| Based on a 2015 quote (£)					|
+| Case			| [Protocase](https://www.protocase.com)				| 384		| 338		| Based on a CAD 2015 quote	(CAD)			|
+| **Total**		|														| **615**	| **542**	|											|
+
 ## Ordering the PCB
 
 Download the [latest release](https://github.com/blemasle/mls800-pcb/releases/latest). You'll find inside the Gerber files that can be used by the manufacturer of your choice. Just be aware that the PCB is uncommonly large (around 30cm) and that some manufacturers might refuse it. [Seeed](https://www.seeedstudio.com/fusion_pcb.html) and [OSHPark](https://oshpark.com) are good choices. I personally used Seeed because I needed several iterations before settling on a layout and OSHPark was too expensive for that.
